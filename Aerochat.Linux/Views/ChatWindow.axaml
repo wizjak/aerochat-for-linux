@@ -1,0 +1,277 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Aerochat.Linux.Controls"
+        x:Class="Aerochat.Linux.Views.ChatWindow"
+        Title="{Binding Title}"
+        Icon="avares://Aerochat/Assets/Resources/Icons/MainWnd.png"
+        Width="700" Height="550"
+        MinWidth="460" MinHeight="360"
+        SystemDecorations="None"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4FAFF">
+
+  <Border BorderBrush="{Binding Scene.WindowBorderBrush}" BorderThickness="1" CornerRadius="6" ClipToBounds="True">
+    <Grid RowDefinitions="28,46,*,16,8,Auto,56,30">
+
+      <!-- Tinted WLM chat background -->
+      <controls:NineSlice Grid.RowSpan="8"
+                          Source="avares://Aerochat/Assets/Resources/Message/Background.png"
+                          Slice="1,1"
+                          Tint="{Binding Scene.Color}" />
+
+      <!-- Title bar -->
+      <Border Grid.Row="0" Background="{Binding Scene.SceneBrush}"
+              BorderBrush="#80FFFFFF" BorderThickness="0,0,0,1"
+              PointerPressed="Titlebar_PointerPressed"
+              DoubleTapped="Titlebar_DoubleTapped">
+        <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto">
+          <Image Width="16" Height="16" Margin="8,0,0,0"
+                 VerticalAlignment="Center"
+                 Source="avares://Aerochat/Assets/Resources/Icons/MainWnd.png" />
+          <TextBlock Grid.Column="1" Margin="6,0,0,0"
+                     VerticalAlignment="Center"
+                     Text="{Binding Title}"
+                     FontWeight="SemiBold"
+                     Foreground="{Binding Scene.TitlebarTextBrush}"
+                     TextTrimming="CharacterEllipsis" />
+          <Button Grid.Column="2" Classes="caption min" Click="Minimize_Click"><Image /></Button>
+          <Button Grid.Column="3" Classes="caption max" Click="Maximize_Click"><Image /></Button>
+          <Button Grid.Column="4" Classes="caption close" Click="Close_Click"><Image /></Button>
+        </Grid>
+      </Border>
+
+      <!-- Chat header -->
+      <Border Grid.Row="1" Background="{Binding Scene.SceneBrush}"
+              BorderBrush="{Binding Scene.HeaderBorderBrush}" BorderThickness="0,0,0,1">
+        <Panel>
+          <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Message/TopBarBg.png"
+                              Slice="3,3"
+                              Tint="{Binding Scene.Color}"
+                              IsHitTestVisible="False" />
+          <Grid ColumnDefinitions="Auto,*" Margin="10,3">
+            <Viewbox Width="38" Height="38" VerticalAlignment="Center">
+              <controls:ProfilePictureFrame FrameSize="Small"
+                                            Avatar="{Binding Icon}"
+                                            Status="{Binding RecipientStatus}" />
+            </Viewbox>
+
+            <StackPanel Grid.Column="1" Margin="8,0,0,0" VerticalAlignment="Center" Spacing="1">
+              <TextBlock Text="{Binding Title}" FontSize="14" FontWeight="SemiBold"
+                         Foreground="{Binding Scene.HeaderTextBrush}" TextTrimming="CharacterEllipsis" />
+              <TextBlock Text="{Binding Subtitle}" FontSize="10"
+                         Foreground="{Binding Scene.HeaderMutedBrush}" TextTrimming="CharacterEllipsis" />
+            </StackPanel>
+          </Grid>
+        </Panel>
+      </Border>
+
+      <!-- Messages -->
+      <ScrollViewer x:Name="MessageScroll" Grid.Row="2"
+                    VerticalScrollBarVisibility="Auto"
+                    HorizontalScrollBarVisibility="Disabled"
+                    Padding="2,2,18,0">
+        <ItemsControl x:Name="MessageList" ItemsSource="{Binding Messages}" HorizontalAlignment="Stretch">
+          <ItemsControl.ItemTemplate>
+            <DataTemplate>
+              <Grid ColumnDefinitions="10,*" Margin="10,2,12,2"
+                    Background="Transparent"
+                    ContextRequested="MessageRow_ContextRequested">
+                <Rectangle Width="3" Height="3" Fill="#999999"
+                           VerticalAlignment="Top" Margin="0,7,0,0" />
+
+                <Border Grid.Column="1" Background="{Binding BubbleBrush}"
+                        CornerRadius="4" Padding="3,2" Margin="-3,0,0,0">
+                  <StackPanel>
+                    <TextBlock FontSize="13" TextTrimming="CharacterEllipsis">
+                      <Run Text="{Binding AuthorName}" Foreground="{Binding AuthorBrush}" FontWeight="SemiBold" />
+                      <Run Text=" said (" Foreground="#525252" />
+                      <Run Text="{Binding Timestamp}" Foreground="#525252" />
+                      <Run Text="):" Foreground="#525252" />
+                      <Run Text="{Binding EditedSuffix}" Foreground="#888888" />
+                    </TextBlock>
+
+                    <SelectableTextBlock Text="{Binding Content}"
+                                         IsVisible="{Binding HasContent}"
+                                         TextWrapping="Wrap" FontSize="13"
+                                         Foreground="#202020"
+                                         Margin="0,1,0,0" LineHeight="17" />
+
+                    <!-- Attachments: inline image previews and file cards. -->
+                    <ItemsControl ItemsSource="{Binding Attachments}" Margin="0,4,0,1">
+                      <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                          <Panel Margin="0,0,0,5"
+                                 Background="Transparent"
+                                 ContextRequested="Attachment_ContextRequested">
+
+                            <!-- Image preview -->
+                            <Border IsVisible="{Binding HasBitmap}"
+                                    Background="#FFFFFF"
+                                    BorderBrush="#A9CBE0" BorderThickness="1"
+                                    CornerRadius="3" Padding="2"
+                                    HorizontalAlignment="Left"
+                                    Cursor="Hand"
+                                    ToolTip.Tip="{Binding Tooltip}"
+                                    PointerPressed="Attachment_Click">
+                              <Image Source="{Binding Bitmap}"
+                                     Width="{Binding DisplayWidth}"
+                                     Height="{Binding DisplayHeight}"
+                                     Stretch="Uniform" />
+                            </Border>
+
+                            <!-- File card (also the fallback when an image cannot be decoded) -->
+                            <Border IsVisible="{Binding !HasBitmap}"
+                                    Background="#E8FFFFFF"
+                                    BorderBrush="#A9CBE0" BorderThickness="1"
+                                    CornerRadius="3" Padding="6,4"
+                                    MaxWidth="360" HorizontalAlignment="Left"
+                                    Cursor="Hand"
+                                    ToolTip.Tip="{Binding Tooltip}"
+                                    PointerPressed="Attachment_Click">
+                              <Grid ColumnDefinitions="Auto,*">
+                                <Border Width="34" Height="34" CornerRadius="2"
+                                        Background="#DCEFFB" BorderBrush="#9CC3DD"
+                                        BorderThickness="1" VerticalAlignment="Center">
+                                  <TextBlock Text="{Binding Extension}"
+                                             FontSize="9" FontWeight="SemiBold"
+                                             Foreground="#2C6F9E"
+                                             HorizontalAlignment="Center"
+                                             VerticalAlignment="Center" />
+                                </Border>
+                                <StackPanel Grid.Column="1" Margin="7,0,0,0"
+                                            VerticalAlignment="Center" Spacing="1">
+                                  <TextBlock Text="{Binding FileName}"
+                                             FontSize="12" FontWeight="SemiBold"
+                                             Foreground="#1F5C87"
+                                             TextTrimming="CharacterEllipsis" />
+                                  <TextBlock Text="{Binding FileInfo}"
+                                             FontSize="10" Foreground="#667D8D" />
+                                  <TextBlock Text="Click to open"
+                                             FontSize="9" Foreground="#7D97A8" />
+                                </StackPanel>
+                              </Grid>
+                            </Border>
+
+                          </Panel>
+                        </DataTemplate>
+                      </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                  </StackPanel>
+                </Border>
+              </Grid>
+            </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      </ScrollViewer>
+
+      <TextBlock Grid.Row="3" Text="{Binding TypingText}" Classes="muted" FontSize="10"
+                 Margin="12,0,12,0" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+
+      <!-- Speech-bubble input area -->
+      <controls:NineSlice Grid.Row="4"
+                          Source="avares://Aerochat/Assets/Resources/Message/Separator.png"
+                          Slice="1,1"
+                          Tint="{Binding Scene.Color}"
+                          IsHitTestVisible="False" />
+
+      <!-- Files queued for the next message -->
+      <Border Grid.Row="5" IsVisible="{Binding HasAttachments}"
+              Margin="16,4,18,2"
+              Background="#DDF2FFFF" BorderBrush="#9CC3DD" BorderThickness="1"
+              CornerRadius="3" Padding="6,4">
+        <StackPanel>
+          <TextBlock Text="Attachments ready to send" FontSize="10"
+                     Foreground="#4A7FA5" Margin="1,0,0,3" />
+          <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                        VerticalScrollBarVisibility="Disabled"
+                        Height="66">
+            <ItemsControl ItemsSource="{Binding PendingAttachments}">
+              <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                  <StackPanel Orientation="Horizontal" Spacing="8" />
+                </ItemsPanelTemplate>
+              </ItemsControl.ItemsPanel>
+              <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                  <Grid Width="58" Height="58" ToolTip.Tip="{Binding Tooltip}">
+                    <Border Background="#FFFFFF" BorderBrush="#9CC3DD"
+                            BorderThickness="1" CornerRadius="3">
+                      <Panel Margin="2">
+                        <Image Source="{Binding Bitmap}" Stretch="Uniform"
+                               IsVisible="{Binding HasBitmap}" />
+                        <TextBlock Text="{Binding Extension}"
+                                   FontSize="9" FontWeight="SemiBold"
+                                   Foreground="#2C6F9E"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   IsVisible="{Binding !HasBitmap}" />
+                      </Panel>
+                    </Border>
+                    <Button Classes="attachRemove" Content="×"
+                            Width="16" Height="16"
+                            HorizontalAlignment="Right" VerticalAlignment="Top"
+                            Margin="0,-5,-5,0"
+                            ToolTip.Tip="Remove attachment"
+                            Click="RemoveAttachment_Click" />
+                  </Grid>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </ScrollViewer>
+        </StackPanel>
+      </Border>
+
+      <Grid Grid.Row="6" Margin="16,0,10,2">
+        <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Message/InputBackground.png"
+                            Slice="16,16"
+                            Tint="{Binding Scene.Color}"
+                            Darken="0.25"
+                            IsHitTestVisible="False" />
+        <TextBox x:Name="InputBox" Classes="chatInput"
+                 AcceptsReturn="True"
+                 MaxLength="2000"
+                 Margin="8,0,8,0"
+                 Watermark="Type your message here"
+                 Foreground="{Binding Scene.InputTextBrush}"
+                 Text="{Binding InputText, Mode=TwoWay}"
+                 IsEnabled="{Binding IsComposerEnabled}"
+                 KeyDown="InputBox_KeyDown"
+                 PastingFromClipboard="InputBox_PastingFromClipboard"
+                 VerticalContentAlignment="Center" />
+        <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Message/SpeechBubbleArrow.png"
+                            Slice="4,4"
+                            Tint="{Binding Scene.Color}"
+                            Width="12" Height="13"
+                            HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                            Margin="-12,0,0,2"
+                            IsHitTestVisible="False" />
+      </Grid>
+
+      <!-- Bottom toolbar -->
+      <Grid Grid.Row="7">
+        <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Message/BottomToolbar.png"
+                            Tint="{Binding Scene.Color}"
+                            Darken="0.25"
+                            IsHitTestVisible="False" />
+        <Grid ColumnDefinitions="*,Auto" Margin="12,0,8,0">
+          <StackPanel VerticalAlignment="Center" Spacing="0" Margin="0,0,8,0">
+            <TextBlock Text="{Binding Error}" Foreground="#B02A37" FontSize="10"
+                       TextTrimming="CharacterEllipsis" IsVisible="{Binding Error, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+            <TextBlock Text="{Binding AttachmentError}" Foreground="#B02A37" FontSize="10"
+                       TextTrimming="CharacterEllipsis" IsVisible="{Binding AttachmentError, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+          </StackPanel>
+          <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+            <TextBlock Text="{Binding ComposerHint}" Classes="muted" FontSize="10"
+                       VerticalAlignment="Center" MaxWidth="260"
+                       TextTrimming="CharacterEllipsis" />
+            <Button Classes="toolbar" Content="Attach" Height="22"
+                    IsEnabled="{Binding CanAttach}" Click="Attach_Click"
+                    ToolTip.Tip="Attach files or images" />
+            <Button Classes="wlm" Content="Send" Height="22"
+                    IsEnabled="{Binding CanSend}" Click="Send_Click"
+                    ToolTip.Tip="{Binding ComposerHint}" />
+          </StackPanel>
+        </Grid>
+      </Grid>
+    </Grid>
+  </Border>
+</Window>

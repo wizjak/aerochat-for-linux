@@ -1,0 +1,202 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Aerochat.Linux.Controls"
+        x:Class="Aerochat.Linux.Views.HomeWindow"
+        Title="Windows Live Messenger"
+        Icon="avares://Aerochat/Assets/Resources/Icons/MainWnd.png"
+        Width="430" Height="680"
+        MinWidth="340" MinHeight="480"
+        SystemDecorations="None"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4FAFF">
+
+  <Border BorderBrush="{Binding Scene.WindowBorderBrush}" BorderThickness="1" CornerRadius="6" ClipToBounds="True">
+    <Grid RowDefinitions="28,108,38,*,6,30">
+
+      <!-- WLM tinted background behind the contact list and footer. -->
+      <controls:NineSlice Grid.RowSpan="6"
+                          Source="avares://Aerochat/Assets/Resources/Message/Background.png"
+                          Slice="1,1"
+                          Tint="{Binding Scene.Color}" />
+
+      <!-- Title bar -->
+      <Border Grid.Row="0" Background="{Binding Scene.SceneBrush}"
+              BorderBrush="#80FFFFFF" BorderThickness="0,0,0,1"
+              PointerPressed="Titlebar_PointerPressed"
+              DoubleTapped="Titlebar_DoubleTapped">
+        <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto">
+          <Image Width="16" Height="16" Margin="8,0,0,0"
+                 VerticalAlignment="Center"
+                 Source="avares://Aerochat/Assets/Resources/Icons/MainWnd.png" />
+          <TextBlock Grid.Column="1" Margin="6,0,0,0"
+                     VerticalAlignment="Center"
+                     Text="Windows Live Messenger"
+                     FontWeight="SemiBold"
+                     Foreground="{Binding Scene.TitlebarTextBrush}"
+                     TextTrimming="CharacterEllipsis" />
+          <Button Grid.Column="2" Classes="caption min" Click="Minimize_Click"><Image /></Button>
+          <Button Grid.Column="3" Classes="caption max" Click="Maximize_Click"><Image /></Button>
+          <Button Grid.Column="4" Classes="caption close" Click="Close_Click"><Image /></Button>
+        </Grid>
+      </Border>
+
+      <!-- Scene header -->
+      <Border Grid.Row="1" Background="{Binding Scene.SceneBrush}"
+              BorderBrush="{Binding Scene.HeaderBorderBrush}" BorderThickness="0,0,0,1">
+        <Panel>
+          <Image Source="{Binding Scene.Image}" Stretch="UniformToFill" />
+          <Rectangle Fill="{Binding Scene.HeaderScrimBrush}" />
+          <Grid ColumnDefinitions="Auto,*" Margin="14,7,14,7">
+            <controls:ProfilePictureFrame FrameSize="Large"
+                                          Avatar="{Binding CurrentUser.Avatar}"
+                                          Status="{Binding CurrentUser.StatusLabel}"
+                                          VerticalAlignment="Center" />
+
+            <StackPanel Grid.Column="1" Margin="10,0,0,0" VerticalAlignment="Center" Spacing="1">
+              <TextBlock Text="{Binding CurrentUser.DisplayName}" FontSize="16" FontWeight="SemiBold"
+                         Foreground="{Binding Scene.HeaderTextBrush}" TextTrimming="CharacterEllipsis" />
+              <TextBlock Text="{Binding CurrentUser.Username}" FontSize="11"
+                         Foreground="{Binding Scene.HeaderMutedBrush}" />
+              <StackPanel Orientation="Horizontal" Spacing="6" Margin="0,3,0,0">
+                <Border Width="9" Height="9" CornerRadius="5" Background="{Binding CurrentUser.StatusBrush}"
+                        VerticalAlignment="Center" />
+                <Button x:Name="StatusButton" Classes="toolbar"
+                        Padding="3,0" MinHeight="18" MinWidth="0">
+                  <StackPanel Orientation="Horizontal" Spacing="4">
+                    <TextBlock Text="{Binding SelectedStatus}" FontSize="11"
+                               Foreground="{Binding Scene.HeaderTextBrush}"
+                               VerticalAlignment="Center" />
+                    <Path Data="M0,0 L4,4 L8,0"
+                          Stroke="{Binding Scene.HeaderMutedBrush}"
+                          StrokeThickness="1.2"
+                          VerticalAlignment="Center" Margin="0,1,0,0" />
+                  </StackPanel>
+                  <Button.Flyout>
+                    <MenuFlyout Placement="BottomEdgeAlignedLeft">
+                      <MenuItem Header="Available" Tag="Available" Click="StatusMenu_Click" />
+                      <MenuItem Header="Busy" Tag="Busy" Click="StatusMenu_Click" />
+                      <MenuItem Header="Away" Tag="Away" Click="StatusMenu_Click" />
+                      <MenuItem Header="Appear offline" Tag="Appear offline" Click="StatusMenu_Click" />
+                    </MenuFlyout>
+                  </Button.Flyout>
+                </Button>
+              </StackPanel>
+            </StackPanel>
+          </Grid>
+        </Panel>
+      </Border>
+
+      <!-- Search bar -->
+      <Grid Grid.Row="2" ColumnDefinitions="*,Auto" Margin="10,6,10,4">
+        <Grid>
+          <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Home/SearchBar.png"
+                              HoverSource="avares://Aerochat/Assets/Resources/Home/SearchBarHover.png"
+                              SelectedSource="avares://Aerochat/Assets/Resources/Home/SearchBarActive.png"
+                              Slice="16,16"
+                              Tint="{Binding Scene.Color}"
+                              IsHovered="{Binding #SearchBox.IsPointerOver}"
+                              IsSelected="{Binding #SearchBox.IsFocused}"
+                              IsHitTestVisible="False" />
+          <TextBox x:Name="SearchBox" Classes="search"
+                   Watermark="Search contacts and chats"
+                   Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+          <Image Width="14" Height="14" Margin="6,0,0,0"
+                 HorizontalAlignment="Left" VerticalAlignment="Center"
+                 IsHitTestVisible="False"
+                 Source="avares://Aerochat/Assets/Resources/Home/SearchIconGray.png" />
+        </Grid>
+        <Button Grid.Column="1" Classes="wlm" Content="Refresh" Margin="6,0,0,0" Click="Refresh_Click" />
+      </Grid>
+
+      <!-- Contact / server tree -->
+      <TreeView x:Name="ChatTree" Grid.Row="3"
+                ItemsSource="{Binding Groups}"
+                SelectionChanged="ChatTree_SelectionChanged"
+                Padding="2,0"
+                Margin="4,0,4,0">
+        <TreeView.ItemTemplate>
+          <TreeDataTemplate ItemsSource="{Binding Children}">
+            <Grid Height="{Binding RowHeight}" ColumnDefinitions="20,*,Auto" Margin="12,0,20,0">
+              <controls:NineSlice Grid.ColumnSpan="3"
+                                  Slice="4,4"
+                                  HoverSource="avares://Aerochat/Assets/Resources/Home/TreeHover.png"
+                                  SelectedSource="avares://Aerochat/Assets/Resources/Home/TreeActive.png"
+                                  SelectedHoverSource="avares://Aerochat/Assets/Resources/Home/TreeHoverActive.png"
+                                  Tint="{Binding Scene.Color}"
+                                  IsHovered="{Binding $parent[TreeViewItem].IsPointerOver}"
+                                  IsSelected="{Binding $parent[TreeViewItem].IsSelected}"
+                                  IsHitTestVisible="False" />
+
+              <Panel Grid.Column="0" Width="16" Height="16" VerticalAlignment="Center">
+                <controls:ProfilePictureFrame FrameSize="ExtraSmall"
+                                              IsVisible="{Binding ShowStatusIcon}"
+                                              Status="{Binding Status}"
+                                              IsGroup="{Binding IsGroupChat}" />
+
+                <TextBlock Text="#" IsVisible="{Binding ShowChannelGlyph}"
+                           FontSize="12" FontWeight="Bold" Foreground="#6FA8CE"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                <Panel IsVisible="{Binding ShowGuildIcon}">
+                  <Image Source="{Binding Icon}" Width="16" Height="16"
+                         Stretch="UniformToFill" IsVisible="{Binding HasAvatar}" />
+                  <Border IsVisible="{Binding !HasAvatar}"
+                          CornerRadius="2" Background="#E1F1FB"
+                          BorderBrush="#B7D8EC" BorderThickness="1">
+                    <TextBlock Text="{Binding FallbackGlyph}" FontSize="9" FontWeight="Bold"
+                               Foreground="#4A7FA5"
+                               HorizontalAlignment="Center" VerticalAlignment="Center" />
+                  </Border>
+                </Panel>
+              </Panel>
+
+              <StackPanel Grid.Column="1" Orientation="Horizontal"
+                          Margin="4,0,6,0" VerticalAlignment="Center">
+                <TextBlock Text="{Binding Name}" FontSize="{Binding NameSize}"
+                           Foreground="{Binding NameBrush}"
+                           TextTrimming="CharacterEllipsis" />
+                <TextBlock Text=" - " FontSize="11" Foreground="#888888"
+                           IsVisible="{Binding HasSubtitle}" />
+                <TextBlock Text="{Binding Subtitle}" FontSize="11"
+                           Foreground="#888888"
+                           TextTrimming="CharacterEllipsis"
+                           IsVisible="{Binding HasSubtitle}" />
+              </StackPanel>
+
+              <TextBlock Grid.Column="2" Text="{Binding LastActivity}" FontSize="10"
+                         Classes="muted" VerticalAlignment="Center" Margin="0,0,4,0" />
+            </Grid>
+          </TreeDataTemplate>
+        </TreeView.ItemTemplate>
+      </TreeView>
+
+      <controls:NineSlice Grid.Row="4"
+                          Source="avares://Aerochat/Assets/Resources/Home/BottomSeparator.png"
+                          Slice="1,1"
+                          Tint="{Binding Scene.Color}"
+                          Darken="0.35" />
+
+      <!-- Footer -->
+      <Grid Grid.Row="5" ColumnDefinitions="*,Auto,Auto,Auto,Auto" Margin="10,0">
+        <TextBlock x:Name="FooterText" Text="Connecting..." VerticalAlignment="Center"
+                   Classes="muted" FontSize="11" TextTrimming="CharacterEllipsis" />
+        <Button Grid.Column="1" Classes="toolbar" Content="Scenes" Click="Scenes_Click" />
+        <Button Grid.Column="2" Classes="toolbar" Content="Alerts">
+          <Button.Flyout>
+            <Flyout Placement="TopEdgeAlignedRight">
+              <StackPanel Width="236" Spacing="3" Margin="4">
+                <TextBlock Text="Alert settings" Classes="title" Margin="0,0,0,3" />
+                <CheckBox Content="Direct messages" IsChecked="{Binding NotifyDm, Mode=TwoWay}" />
+                <CheckBox Content="Mentions in groups and servers" IsChecked="{Binding NotifyMention, Mode=TwoWay}" />
+                <CheckBox Content="Friends coming online" IsChecked="{Binding NotifyFriendOnline, Mode=TwoWay}" />
+                <CheckBox Content="Play notification sound" IsChecked="{Binding PlayNotificationSounds, Mode=TwoWay}" />
+              </StackPanel>
+            </Flyout>
+          </Button.Flyout>
+        </Button>
+        <Button Grid.Column="3" Classes="toolbar" Content="Sign out" Click="SignOut_Click" />
+        <Button Grid.Column="4" Classes="toolbar" Content="Close" Click="Close_Click" />
+      </Grid>
+    </Grid>
+  </Border>
+</Window>

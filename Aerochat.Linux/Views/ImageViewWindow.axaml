@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Aerochat.Linux.Views.ImageViewWindow"
+        Title="{Binding FileName}"
+        Icon="avares://Aerochat/Assets/Resources/Icons/MainWnd.png"
+        Width="760" Height="600"
+        MinWidth="320" MinHeight="220"
+        SystemDecorations="None"
+        WindowStartupLocation="CenterOwner"
+        Background="Transparent">
+
+  <Border BorderBrush="#6E8FA4" BorderThickness="1" CornerRadius="6" ClipToBounds="True">
+    <Grid RowDefinitions="28,*,28">
+      <Border Background="#D9EDFB"
+              BorderBrush="#80FFFFFF" BorderThickness="0,0,0,1"
+              PointerPressed="Titlebar_PointerPressed">
+        <Grid ColumnDefinitions="Auto,*,Auto">
+          <Image Width="16" Height="16" Margin="8,0,0,0"
+                 VerticalAlignment="Center"
+                 Source="avares://Aerochat/Assets/Resources/Icons/MainWnd.png" />
+          <TextBlock Grid.Column="1" Margin="6,0,8,0"
+                     VerticalAlignment="Center"
+                     Text="{Binding FileName}"
+                     FontWeight="SemiBold" Foreground="#1B1B1B"
+                     TextTrimming="CharacterEllipsis" />
+          <Button Grid.Column="2" Classes="caption close" Click="Close_Click"><Image /></Button>
+        </Grid>
+      </Border>
+
+      <Panel Grid.Row="1" Background="#2B2B2B">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+          <Image Source="{Binding Bitmap}" Stretch="Uniform"
+                 HorizontalAlignment="Center" VerticalAlignment="Center"
+                 Margin="6" />
+        </ScrollViewer>
+      </Panel>
+
+      <Grid Grid.Row="2" ColumnDefinitions="*,Auto,Auto" Margin="10,0">
+        <TextBlock Text="{Binding FileInfo}" VerticalAlignment="Center"
+                   FontSize="10" Foreground="#6B7C8A"
+                   TextTrimming="CharacterEllipsis" />
+        <Button Grid.Column="1" Classes="toolbar" Content="Open" Click="Open_Click" />
+        <Button Grid.Column="2" Classes="toolbar" Content="Copy image" Click="CopyImage_Click" />
+      </Grid>
+    </Grid>
+  </Border>
+</Window>

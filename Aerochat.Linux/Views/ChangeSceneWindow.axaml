@@ -1,0 +1,101 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Aerochat.Linux.Controls"
+        x:Class="Aerochat.Linux.Views.ChangeSceneWindow"
+        Title="Change scene"
+        Icon="avares://Aerochat/Assets/Resources/Icons/MainWnd.png"
+        Width="566" Height="620"
+        CanResize="False"
+        SystemDecorations="None"
+        WindowStartupLocation="CenterOwner"
+        Background="#F4FAFF">
+
+  <Border BorderBrush="{Binding Scene.WindowBorderBrush}" BorderThickness="1" CornerRadius="6" ClipToBounds="True">
+    <Grid RowDefinitions="28,*">
+
+      <Border Grid.Row="0" Background="{Binding Scene.SceneBrush}"
+              BorderBrush="#80FFFFFF" BorderThickness="0,0,0,1"
+              PointerPressed="Titlebar_PointerPressed">
+        <Grid ColumnDefinitions="Auto,*,Auto">
+          <Image Width="16" Height="16" Margin="8,0,0,0"
+                 VerticalAlignment="Center"
+                 Source="avares://Aerochat/Assets/Resources/Icons/MainWnd.png" />
+          <TextBlock Grid.Column="1" Margin="6,0,0,0" VerticalAlignment="Center"
+                     Text="Change scene" FontWeight="SemiBold"
+                     Foreground="{Binding Scene.TitlebarTextBrush}" />
+          <Button Grid.Column="2" Classes="caption close" Click="Close_Click"><Image /></Button>
+        </Grid>
+      </Border>
+
+      <Grid Grid.Row="1">
+        <controls:NineSlice Source="avares://Aerochat/Assets/Resources/ChangeScene/Background.png"
+                            Slice="1,1" />
+
+        <Grid RowDefinitions="*,44">
+          <Grid Grid.Row="0" RowDefinitions="Auto,*" Margin="16,12,16,10">
+            <StackPanel>
+              <TextBlock Text="Select a scene" FontSize="16" Foreground="#0355A8" />
+              <TextBlock Text="The people you chat with will see the scene and colour scheme you choose."
+                         Foreground="#888888" FontSize="11" Margin="0,2,0,0" TextWrapping="Wrap" />
+              <TextBlock Text="{Binding Status}" FontSize="10" Classes="muted"
+                         TextTrimming="CharacterEllipsis" Margin="0,2,0,0" />
+            </StackPanel>
+
+            <Border Grid.Row="1" Margin="0,8,0,0"
+                    Background="#30FFFFFF"
+                    BorderBrush="#4080A8C0" BorderThickness="1" CornerRadius="3">
+              <ScrollViewer x:Name="SceneScroll" VerticalScrollBarVisibility="Auto"
+                            HorizontalScrollBarVisibility="Disabled" Padding="4">
+                <ItemsControl ItemsSource="{Binding Items}">
+                  <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                      <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                  </ItemsControl.ItemsPanel>
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                      <Border x:Name="Card" Width="112" Height="82" Margin="3"
+                              ToolTip.Tip="{Binding Name}"
+                              Cursor="Hand" PointerPressed="Scene_PointerPressed">
+                        <Panel>
+                          <controls:NineSlice Slice="4,4"
+                                              HoverSource="avares://Aerochat/Assets/Resources/ChangeScene/Hover.png"
+                                              SelectedSource="avares://Aerochat/Assets/Resources/ChangeScene/Active.png"
+                                              IsHovered="{Binding #Card.IsPointerOver}"
+                                              IsSelected="{Binding IsSelected}"
+                                              IsHitTestVisible="False" />
+                          <Border Margin="5,5,11,27" Background="#33AACC"
+                                  BorderBrush="#557A8A" BorderThickness="1"
+                                  ClipToBounds="True">
+                            <Image Source="{Binding Thumbnail}" Stretch="Fill" />
+                          </Border>
+                          <TextBlock Text="{Binding Name}" FontSize="10" FontWeight="SemiBold"
+                                     Margin="5,0,5,3" VerticalAlignment="Bottom"
+                                     TextTrimming="CharacterEllipsis" />
+                        </Panel>
+                      </Border>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </ScrollViewer>
+            </Border>
+          </Grid>
+
+          <Grid Grid.Row="1">
+            <controls:NineSlice Source="avares://Aerochat/Assets/Resources/ChangeScene/Bottom.png"
+                                Slice="1,6" />
+            <Grid ColumnDefinitions="*,Auto,Auto" Margin="14,0">
+              <TextBlock Text="Your Discord profile is not modified." FontSize="9"
+                         Classes="muted" VerticalAlignment="Center"
+                         TextTrimming="CharacterEllipsis" />
+              <Button Grid.Column="1" Classes="wlm" Content="Use my profile color"
+                      Margin="6,0,0,0" Click="ProfileColor_Click" />
+              <Button Grid.Column="2" Classes="wlm" Content="Close"
+                      Margin="6,0,0,0" Click="Close_Click" />
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+  </Border>
+</Window>

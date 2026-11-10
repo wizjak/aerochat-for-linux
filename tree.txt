@@ -1,0 +1,2350 @@
+.
+├── Aerobool
+│   ├── Aerobool
+│   │   ├── Aerobool.csproj
+│   │   ├── Expressions
+│   │   │   ├── EqualsExpression.cs
+│   │   │   ├── NotExpression.cs
+│   │   │   ├── TypecheckExpression.cs
+│   │   │   └── ValueExpression.cs
+│   │   └── Interface
+│   │       └── IExpression.cs
+│   └── Aerobool.sln
+├── Aerochat
+│   ├── Ads
+│   │   ├── 2006Album.png
+│   │   ├── 21H2to7TransformationPack.png
+│   │   ├── Ads.xml
+│   │   ├── Aerocat.png
+│   │   ├── AerochatisOpenSource.png
+│   │   ├── Aerochat.png
+│   │   ├── ArchLinux-asimplelightweightlinuxdistribution.png
+│   │   ├── AVASTRAWPAGE.gif
+│   │   ├── BetterCallSaul.png
+│   │   ├── Bitview.png
+│   │   ├── Blabla.png
+│   │   ├── Blips.png
+│   │   ├── Bookmarks.png
+│   │   ├── BurnoutRevenge.gif
+│   │   ├── Bytemind.gif
+│   │   ├── Cobalt.png
+│   │   ├── CodenamesUnlimitedElectronicMusic.png
+│   │   ├── comboklombo2.png
+│   │   ├── Counter-StrikeSource.png
+│   │   ├── CursorInvisible.png
+│   │   ├── cyanogenmod.png
+│   │   ├── Dailysuikacom.png
+│   │   ├── Dankpods.png
+│   │   ├── Debian-Theuniversaloperatingsystem.png
+│   │   ├── DeltarunebyTobyFox.png
+│   │   ├── DragonBallOnline.png
+│   │   ├── duckydeecuriousidees.png
+│   │   ├── ENA.png
+│   │   ├── ErrorOliver.png
+│   │   ├── Explorer7.png
+│   │   ├── Fin.png
+│   │   ├── Firefox.gif
+│   │   ├── firefox.png
+│   │   ├── FreeGamesatROBLOXcom.png
+│   │   ├── furplesawesomead.gif
+│   │   ├── FVideos11.png
+│   │   ├── GameBanana.png
+│   │   ├── Geckium.png
+│   │   ├── Geode.gif
+│   │   ├── GoogleChrome-Getafastfreewebbrowser.png
+│   │   ├── GTDB.png
+│   │   ├── GummibrsOfficialServer.png
+│   │   ├── Half-Life2ComingSoon.png
+│   │   ├── hjonk.png
+│   │   ├── Homestuck.gif
+│   │   ├── iPhone3GS-MoretoloveLesstopay.png
+│   │   ├── iPhone5C-Forthecolorful.png
+│   │   ├── iTunes-Theworlds1musicstore.png
+│   │   ├── janevortex.gif
+│   │   ├── jvtexad.png
+│   │   ├── jvtexadWILLLOOKBETTERTRUST.gif
+│   │   ├── KWSXRADIO.gif
+│   │   ├── Legacy4J.png
+│   │   ├── Liam.png
+│   │   ├── LibreWolf.png
+│   │   ├── LightshowRUSH.png
+│   │   ├── LineageOS.png
+│   │   ├── LinkinParkXJay-ZCollab.png
+│   │   ├── Lucida.png
+│   │   ├── Lycos.jpeg
+│   │   ├── MakeYourOwnAd.png
+│   │   ├── Minecraft.png
+│   │   ├── Mint.png
+│   │   ├── MirandaNG.png
+│   │   ├── MLG2460spersonalsite.gif
+│   │   ├── modarchive.png
+│   │   ├── ModTheSims.png
+│   │   ├── MoriHime-VirtualRockBand.png
+│   │   ├── MozillaThunderbird-Organizesecureandcustomizeyouremail.png
+│   │   ├── MSNMusic.png
+│   │   ├── MSPAINTADVENTURES.gif
+│   │   ├── mywebsite.png
+│   │   ├── N09.png
+│   │   ├── name.gif
+│   │   ├── NaziZombiesPortable.png
+│   │   ├── NeedForSpeedProStreetPre-Order.gif
+│   │   ├── NetRestore.png
+│   │   ├── Newgrounds.png
+│   │   ├── NintendoDSi.png
+│   │   ├── Nitromenewdesign.png
+│   │   ├── NoBigDeal.png
+│   │   ├── noctanium.png
+│   │   ├── OpenJDK.png
+│   │   ├── OpenUtau.png
+│   │   ├── penguincomputing.png
+│   │   ├── Persona3.jpeg
+│   │   ├── Photopea.png
+│   │   ├── Pissandshittium.png
+│   │   ├── PrismLauncher.png
+│   │   ├── ProjectLuna.png
+│   │   ├── Re-Console.png
+│   │   ├── RidgeTV.png
+│   │   ├── RingRacers.png
+│   │   ├── Rizzthereadme.png
+│   │   ├── roblox.jpeg
+│   │   ├── SecretCult.png
+│   │   ├── Slobbery.png
+│   │   ├── Soulseek.png
+│   │   ├── Soundcloud2011.png
+│   │   ├── SouthParkBiggerLongerUncut.png
+│   │   ├── spacehey.png
+│   │   ├── SPAMTONSWEEPSTAKES.gif
+│   │   ├── Spotify-Aworldofmusic.png
+│   │   ├── StarTube.png
+│   │   ├── Steam.png
+│   │   ├── Sudomemo.png
+│   │   ├── Teasawesomestrawpage.png
+│   │   ├── TheMostAmazingSite.png
+│   │   ├── TheOldNetImprovedVersion.png
+│   │   ├── TheOrangeBox.png
+│   │   ├── UnderscoreAngelsWebsite.png
+│   │   ├── VergilsBanish.png
+│   │   ├── VibRibbon.png
+│   │   ├── visitnhrevise.gif
+│   │   ├── VorapisV3.png
+│   │   ├── WarmRizzlers.png
+│   │   ├── WearefuckingunderattackPLAYNOW.png
+│   │   ├── WelcometoBitviewBlaynchannel.gif
+│   │   ├── WiiLink.png
+│   │   ├── Wii.png
+│   │   ├── Windows7.png
+│   │   ├── Windows8-Openawiderworld.png
+│   │   ├── Windows93.png
+│   │   ├── windowsxd.png
+│   │   ├── wizard-gang.png
+│   │   ├── WWTHD.gif
+│   │   ├── x3oj.png
+│   │   ├── Xbox360.png
+│   │   ├── youtube.jpeg
+│   │   ├── Yume2kki.png
+│   │   └── ZorinOS.png
+│   ├── Aerochat.csproj
+│   ├── AppHostBin
+│   │   ├── apphost.exe
+│   │   └── README.md
+│   ├── App.xaml
+│   ├── App.xaml.cs
+│   ├── AssemblyInfo.cs
+│   ├── Attributes
+│   │   └── DisplayAttribute.cs
+│   ├── BBCode
+│   │   ├── BBCodeParser.cs
+│   │   └── BBCodeToken.cs
+│   ├── Controls
+│   │   ├── AdImage.xaml
+│   │   ├── AdImage.xaml.cs
+│   │   ├── AnimatedTileImage.xaml
+│   │   ├── AnimatedTileImage.xaml.cs
+│   │   ├── AttachmentsEditor
+│   │   │   ├── AttachmentsPreview.xaml
+│   │   │   ├── AttachmentsPreview.xaml.cs
+│   │   │   ├── AttachmentsStrip.xaml
+│   │   │   ├── AttachmentsStrip.xaml.cs
+│   │   │   ├── AttachmentsTinyEditor.xaml
+│   │   │   ├── AttachmentsTinyEditor.xaml.cs
+│   │   │   ├── PopupBehavior.cs
+│   │   │   ├── ScrollViewerHelper.cs
+│   │   │   └── StripItemTemplateSelector.cs
+│   │   ├── AudioPlayer.xaml
+│   │   ├── AudioPlayer.xaml.cs
+│   │   ├── BasicTitlebar.cs
+│   │   ├── BBCode.cs
+│   │   ├── ButtonTheme
+│   │   │   ├── ButtonBackgroundImage.cs
+│   │   │   └── ButtonTheme.xaml
+│   │   ├── ColorizedNineSlice.cs
+│   │   ├── HomeTreeView.cs
+│   │   ├── InteropContextMenu.cs
+│   │   ├── MessageParser.cs
+│   │   ├── NativeToolTip.cs
+│   │   ├── NineSliceButton.cs
+│   │   ├── NineSlice.cs
+│   │   ├── NineSliceStuff
+│   │   │   ├── NineSliceCacheManager.cs
+│   │   │   ├── NineSliceImageSet.cs
+│   │   │   └── NineSlicePart.cs
+│   │   ├── NoDwmTitlebar.xaml
+│   │   ├── NoDwmTitlebar.xaml.cs
+│   │   ├── OverflowPanel.cs
+│   │   ├── ProfilePictureFrame.xaml
+│   │   ├── ProfilePictureFrame.xaml.cs
+│   │   ├── ScrollBar
+│   │   │   ├── HidableColumnDefinition.cs
+│   │   │   ├── HidableRowDefinition.cs
+│   │   │   ├── ScrollBarProperties.cs
+│   │   │   ├── ScrollBarTheme.xaml
+│   │   │   ├── ShowThumbGripperConverter.cs
+│   │   │   └── ThemeProperties.cs
+│   │   ├── SelectableTextBlock.cs
+│   │   └── TitlebarThemeManager.cs
+│   ├── Converter
+│   │   ├── BooleanToVisibilityConverter.cs
+│   │   ├── EnumToStringConverter.cs
+│   │   ├── InverseBooleanConverter.cs
+│   │   ├── MultiBooleanConverter.cs
+│   │   ├── OnlyIfKeyboardMostRecentInputDeviceConverter.cs
+│   │   └── TimeFormatConverter.cs
+│   ├── Enums
+│   │   ├── AerochatLoginStatus.cs
+│   │   ├── AudioPlayer.cs
+│   │   ├── MediaType.cs
+│   │   └── TimeFormat.cs
+│   ├── FontAppearanceManager.cs
+│   ├── Helpers
+│   │   ├── AttachmentEditor
+│   │   │   └── ProgramIconManager.cs
+│   │   ├── DiscordUserSettingsManager.cs
+│   │   ├── EnumHelper.cs
+│   │   ├── FindParent.cs
+│   │   ├── FixMicrosoftBadCodeMakingShitCrash.cs
+│   │   ├── ImageConverter.cs
+│   │   ├── LocalImageConverter.cs
+│   │   ├── OpenChatQueue.cs
+│   │   ├── TextToSpeech.cs
+│   │   └── WeakDictionary.cs
+│   ├── Hoarder
+│   │   └── Hoarder.cs
+│   ├── Icons
+│   │   └── MainWnd.ico
+│   ├── Protobuf
+│   │   ├── PreloadedUserSettings.cs
+│   │   └── src
+│   │       └── PreloadedUserSettings.proto
+│   ├── Resources
+│   │   ├── AttachmentsEditor
+│   │   │   ├── DeleteHover.png
+│   │   │   ├── Delete.png
+│   │   │   ├── DeletePressed.png
+│   │   │   ├── ItemBgHover.png
+│   │   │   ├── ItemBgKeyFocused.png
+│   │   │   ├── ItemBgSelected.png
+│   │   │   ├── PreviewImageBackground.png
+│   │   │   ├── PreviewNavButtonsSeparator.png
+│   │   │   ├── PreviewNextButtonHover.png
+│   │   │   ├── PreviewNextButton.png
+│   │   │   ├── PreviewNextButtonPressed.png
+│   │   │   ├── PreviewPrevButtonHover.png
+│   │   │   ├── PreviewPrevButton.png
+│   │   │   └── PreviewPrevButtonPressed.png
+│   │   ├── AudioPlayer
+│   │   │   ├── download.png
+│   │   │   ├── pause_disabled.png
+│   │   │   ├── pause_hover.png
+│   │   │   ├── pause.png
+│   │   │   ├── pause_pressed.png
+│   │   │   ├── pbfillend.png
+│   │   │   ├── play_disabled.png
+│   │   │   ├── play_hover.png
+│   │   │   ├── play.png
+│   │   │   ├── play_pressed.png
+│   │   │   ├── seekhandle_hover.png
+│   │   │   ├── seekhandle.png
+│   │   │   ├── seekhandle_pressed.png
+│   │   │   ├── volhandle_hover.png
+│   │   │   ├── volhandle.png
+│   │   │   ├── volhandle_pressed.png
+│   │   │   ├── vol_high.png
+│   │   │   ├── vol_low.png
+│   │   │   ├── vol_mid.png
+│   │   │   └── vol_muted.png
+│   │   ├── bg-1.png
+│   │   ├── BoolEditor
+│   │   │   ├── Class.png
+│   │   │   ├── Field.png
+│   │   │   └── Namespace.png
+│   │   ├── Button
+│   │   │   ├── Disabled.png
+│   │   │   ├── Focused.png
+│   │   │   ├── Hover.png
+│   │   │   ├── Normal.png
+│   │   │   └── Pressed.png
+│   │   ├── ChangeScene
+│   │   │   ├── Active.png
+│   │   │   ├── Background.png
+│   │   │   ├── Bottom.png
+│   │   │   └── Hover.png
+│   │   ├── Dialog
+│   │   │   └── Background.png
+│   │   ├── Dropdown
+│   │   │   ├── DropdownExpandedHover.png
+│   │   │   ├── DropdownExpanded.png
+│   │   │   ├── DropdownHover.png
+│   │   │   └── Dropdown.png
+│   │   ├── Dropdown.png
+│   │   ├── Emoji
+│   │   │   ├── Angel.png
+│   │   │   ├── Anger.png
+│   │   │   ├── Bat.png
+│   │   │   ├── Beach.png
+│   │   │   ├── Beer.png
+│   │   │   ├── BrokenHeart.png
+│   │   │   ├── Cake.png
+│   │   │   ├── Camera.png
+│   │   │   ├── Car.png
+│   │   │   ├── Cat.png
+│   │   │   ├── CellPhone.png
+│   │   │   ├── Cigarette.png
+│   │   │   ├── Clock.png
+│   │   │   ├── Coffee.png
+│   │   │   ├── Computer.png
+│   │   │   ├── Confused.png
+│   │   │   ├── Conversation.png
+│   │   │   ├── CrossedFingers.png
+│   │   │   ├── Cuffs.png
+│   │   │   ├── Currency.png
+│   │   │   ├── Demon.png
+│   │   │   ├── Discontent.png
+│   │   │   ├── Dog.png
+│   │   │   ├── Film.png
+│   │   │   ├── Flushed.png
+│   │   │   ├── Football.png
+│   │   │   ├── Frown.png
+│   │   │   ├── Goat.png
+│   │   │   ├── Grin.png
+│   │   │   ├── Heart.png
+│   │   │   ├── HighFive.png
+│   │   │   ├── Jump.png
+│   │   │   ├── Lightbuild.png
+│   │   │   ├── LipBite.png
+│   │   │   ├── Mail.png
+│   │   │   ├── Man.png
+│   │   │   ├── Moon.png
+│   │   │   ├── Music.png
+│   │   │   ├── Nerd.png
+│   │   │   ├── Party.png
+│   │   │   ├── Phone.png
+│   │   │   ├── Pizza.png
+│   │   │   ├── Plane.png
+│   │   │   ├── Plate.png
+│   │   │   ├── Present.png
+│   │   │   ├── Rabbit.png
+│   │   │   ├── Rage.png
+│   │   │   ├── Rainbow.png
+│   │   │   ├── Rain.png
+│   │   │   ├── ReachLeft.png
+│   │   │   ├── ReachRight.png
+│   │   │   ├── RollingEyes.png
+│   │   │   ├── Rose.png
+│   │   │   ├── Rose_Wilter.png
+│   │   │   ├── Sheep.png
+│   │   │   ├── Sick.png
+│   │   │   ├── Smile.png
+│   │   │   ├── Snail.png
+│   │   │   ├── Sob.png
+│   │   │   ├── Soup.png
+│   │   │   ├── Star.png
+│   │   │   ├── Sunglasses.png
+│   │   │   ├── Sun.png
+│   │   │   ├── Surprised.png
+│   │   │   ├── Surprise.png
+│   │   │   ├── Thinking.png
+│   │   │   ├── ThumbsDown.png
+│   │   │   ├── ThumbsUp.png
+│   │   │   ├── Thunder.png
+│   │   │   ├── Tongue.png
+│   │   │   ├── Tortoise.png
+│   │   │   ├── Umbrella.png
+│   │   │   ├── Wine.png
+│   │   │   ├── Wink.png
+│   │   │   ├── WLM.png
+│   │   │   ├── Woman.png
+│   │   │   ├── WTF.png
+│   │   │   ├── Xbox.png
+│   │   │   ├── Yawn.png
+│   │   │   └── ZipMouth.png
+│   │   ├── Frames
+│   │   │   ├── LargeFrameActiveAnimation.png
+│   │   │   ├── LargeFrameActive.png
+│   │   │   ├── LargeFrameDndAnimation.png
+│   │   │   ├── LargeFrameDnd.png
+│   │   │   ├── LargeFrameIdleAnimation.png
+│   │   │   ├── LargeFrameIdle.png
+│   │   │   ├── LargeFrameOffline.png
+│   │   │   ├── MediumFrameActiveAnimation.png
+│   │   │   ├── MediumFrameActive.png
+│   │   │   ├── MediumFrameDndAnimation.png
+│   │   │   ├── MediumFrameDnd.png
+│   │   │   ├── MediumFrameIdleAnimation.png
+│   │   │   ├── MediumFrameIdle.png
+│   │   │   ├── MediumFrameOffline.png
+│   │   │   ├── PlaceholderPfp.png
+│   │   │   ├── SmallFrameActiveAnimation.png
+│   │   │   ├── SmallFrameActive.png
+│   │   │   ├── SmallFrameDndAnimation.png
+│   │   │   ├── SmallFrameDnd.png
+│   │   │   ├── SmallFrameIdleAnimation.png
+│   │   │   ├── SmallFrameIdle.png
+│   │   │   ├── SmallFrameOffline.png
+│   │   │   ├── XLFrameActiveAnimation.png
+│   │   │   ├── XLFrameActive.png
+│   │   │   ├── XLFrameDndAnimation.png
+│   │   │   ├── XLFrameDnd.png
+│   │   │   ├── XLFrameIdleAnimation.png
+│   │   │   ├── XLFrameIdle.png
+│   │   │   ├── XLFrameOffline.png
+│   │   │   ├── XSFrameActiveM.png
+│   │   │   ├── XSFrameActive.png
+│   │   │   ├── XSFrameDndM.png
+│   │   │   ├── XSFrameDnd.png
+│   │   │   ├── XSFrameIdleM.png
+│   │   │   ├── XSFrameIdle.png
+│   │   │   ├── XSFrameOfflineM.png
+│   │   │   └── XSFrameOffline.png
+│   │   ├── Home
+│   │   │   ├── AddFriend.png
+│   │   │   ├── BottomSeparator.png
+│   │   │   ├── ChangeLayout.png
+│   │   │   ├── CloseHover.png
+│   │   │   ├── Close.png
+│   │   │   ├── Dropdown.png
+│   │   │   ├── ErrorIcon.png
+│   │   │   ├── Error.png
+│   │   │   ├── InfoIcon.png
+│   │   │   ├── Info.png
+│   │   │   ├── LeftActive.png
+│   │   │   ├── LeftHover.png
+│   │   │   ├── Left.png
+│   │   │   ├── Mail.png
+│   │   │   ├── PageClose.png
+│   │   │   ├── PageOpen.png
+│   │   │   ├── RightActive.png
+│   │   │   ├── RightHover.png
+│   │   │   ├── Right.png
+│   │   │   ├── SearchBarActive.png
+│   │   │   ├── SearchBarHover.png
+│   │   │   ├── SearchBar.png
+│   │   │   ├── SearchIconBlue.png
+│   │   │   ├── SearchIconGray.png
+│   │   │   ├── ShowMenu.png
+│   │   │   ├── StatusTextBoxBg.png
+│   │   │   ├── TreeActive.png
+│   │   │   ├── TreeHoverActive.png
+│   │   │   ├── TreeHover.png
+│   │   │   ├── WarningIcon.png
+│   │   │   └── Warning.png
+│   │   ├── Icons
+│   │   │   └── DiscordIcon.png
+│   │   ├── ImagePreviewer
+│   │   │   ├── CaptionActive.png
+│   │   │   ├── CaptionClose.png
+│   │   │   ├── CaptionHover.png
+│   │   │   ├── OpenActive.png
+│   │   │   ├── OpenHover.png
+│   │   │   └── Open.png
+│   │   ├── Login
+│   │   │   └── Frame.png
+│   │   ├── Message
+│   │   │   ├── Background.png
+│   │   │   ├── BottomSeparator.png
+│   │   │   ├── BottomToolbar.png
+│   │   │   ├── Colors.png
+│   │   │   ├── Embed.png
+│   │   │   ├── Expand.png
+│   │   │   ├── Group.png
+│   │   │   ├── InputBackground.png
+│   │   │   ├── LeaveCall.png
+│   │   │   ├── Nudge.png
+│   │   │   ├── Pen.png
+│   │   │   ├── RedoInactive.png
+│   │   │   ├── Redo.png
+│   │   │   ├── Separator.png
+│   │   │   ├── SpeechBubbleArrow.png
+│   │   │   ├── Text.png
+│   │   │   ├── ToolbarActive.png
+│   │   │   ├── ToolbarHover.png
+│   │   │   ├── TopBarBg.png
+│   │   │   ├── Typing.png
+│   │   │   ├── UndoInactive.png
+│   │   │   ├── Undo.png
+│   │   │   └── 消しゴム.png
+│   │   ├── msgres_4000_1473_var.png
+│   │   ├── NonNativeTooltip
+│   │   │   ├── ItemActive.png
+│   │   │   └── ItemHover.png
+│   │   ├── Notification
+│   │   │   ├── Background.png
+│   │   │   ├── CloseHover.png
+│   │   │   ├── Close.png
+│   │   │   └── Logo.png
+│   │   ├── ScrollBar
+│   │   │   ├── Active.png
+│   │   │   ├── DownGlyphActive.png
+│   │   │   ├── DownGlyphHover.png
+│   │   │   ├── DownGlyphInactive.png
+│   │   │   ├── HorzScrollBarBg.png
+│   │   │   ├── HorzThumbActive.png
+│   │   │   ├── HorzThumbGripperActive.png
+│   │   │   ├── HorzThumbGripperHover.png
+│   │   │   ├── HorzThumbGripperInactive.png
+│   │   │   ├── HorzThumbHover.png
+│   │   │   ├── HorzThumbInactive.png
+│   │   │   ├── Hover.png
+│   │   │   ├── Inactive.png
+│   │   │   ├── JumpToBottomActive.png
+│   │   │   ├── JumpToBottomHover.png
+│   │   │   ├── JumpToBottomInactive.png
+│   │   │   ├── JumpToLeftActive.png
+│   │   │   ├── JumpToLeftHover.png
+│   │   │   ├── JumpToLeftInactive.png
+│   │   │   ├── JumpToRightActive.png
+│   │   │   ├── JumpToRightHover.png
+│   │   │   ├── JumpToRightInactive.png
+│   │   │   ├── JumpToTopActive.png
+│   │   │   ├── JumpToTopHover.png
+│   │   │   ├── JumpToTopInactive.png
+│   │   │   ├── LeftGlyphActive.png
+│   │   │   ├── LeftGlyphHover.png
+│   │   │   ├── LeftGlyphInactive.png
+│   │   │   ├── RightGlyphActive.png
+│   │   │   ├── RightGlyphHover.png
+│   │   │   ├── RightGlyphInactive.png
+│   │   │   ├── UpGlyphActive.png
+│   │   │   ├── UpGlyphHover.png
+│   │   │   ├── UpGlyphInactive.png
+│   │   │   ├── VertScrollBarBg.png
+│   │   │   ├── VertThumbGripperActive.png
+│   │   │   ├── VertThumbGripperHover.png
+│   │   │   └── VertThumbGripperInactive.png
+│   │   ├── Sounds
+│   │   │   ├── newalert.wav
+│   │   │   ├── newemail.wav
+│   │   │   ├── nudge.wav
+│   │   │   ├── online.wav
+│   │   │   ├── outgoing.wav
+│   │   │   ├── phone.wav
+│   │   │   └── type.wav
+│   │   ├── Speen.png
+│   │   ├── Status
+│   │   │   ├── Listening.png
+│   │   │   └── Playing.png
+│   │   ├── Titlebar
+│   │   │   ├── Separator.png
+│   │   │   ├── Vista
+│   │   │   │   ├── CloseActive.png
+│   │   │   │   ├── CloseHover.png
+│   │   │   │   ├── CloseInactive.png
+│   │   │   │   ├── Close.png
+│   │   │   │   ├── CloseSingleActive.png
+│   │   │   │   ├── CloseSingleHover.png
+│   │   │   │   ├── CloseSingleInactive.png
+│   │   │   │   ├── CloseSingle.png
+│   │   │   │   ├── MaximizeActive.png
+│   │   │   │   ├── MaximizeHover.png
+│   │   │   │   ├── MaximizeInactive.png
+│   │   │   │   ├── Maximize.png
+│   │   │   │   ├── MinimizeActive.png
+│   │   │   │   ├── MinimizeHover.png
+│   │   │   │   ├── MinimizeInactive.png
+│   │   │   │   └── Minimize.png
+│   │   │   └── XP
+│   │   │       ├── CloseActive.png
+│   │   │       ├── CloseHover.png
+│   │   │       ├── CloseInactive.png
+│   │   │       ├── Close.png
+│   │   │       ├── CloseSingleActive.png
+│   │   │       ├── CloseSingleHover.png
+│   │   │       ├── CloseSingleInactive.png
+│   │   │       ├── CloseSingle.png
+│   │   │       ├── MaximizeActive.png
+│   │   │       ├── MaximizeHover.png
+│   │   │       ├── MaximizeInactive.png
+│   │   │       ├── Maximize.png
+│   │   │       ├── MinimizeActive.png
+│   │   │       ├── MinimizeHover.png
+│   │   │       ├── MinimizeInactive.png
+│   │   │       └── Minimize.png
+│   │   ├── top-blue-thing.png
+│   │   ├── top-blue-thing-transparent.png
+│   │   └── Tray
+│   │       ├── Active.ico
+│   │       ├── Dnd.ico
+│   │       ├── Idle.ico
+│   │       └── Offline.ico
+│   ├── Scenes
+│   │   ├── 0001.png
+│   │   ├── 0002.png
+│   │   ├── 0003.png
+│   │   ├── 0004.png
+│   │   ├── 0005.png
+│   │   ├── 0006.png
+│   │   ├── 0007.png
+│   │   ├── 0008.png
+│   │   ├── 20YearHumanity.png
+│   │   ├── AbstractTurquoise.jpg
+│   │   ├── Aerochat.png
+│   │   ├── AeroTrail.png
+│   │   ├── Ambiance.png
+│   │   ├── AphexTwin.png
+│   │   ├── Arrowfunk.png
+│   │   ├── BetaFish.png
+│   │   ├── BLiNXTheTimeSweeper.png
+│   │   ├── Bliss.png
+│   │   ├── BlueWaves.png
+│   │   ├── BrightLines.png
+│   │   ├── ButterflyPattern.png
+│   │   ├── CarbonFiber.png
+│   │   ├── Catstronaut.png
+│   │   ├── Caustics.jpg
+│   │   ├── chiikawa.png
+│   │   ├── Cloudsdale.png
+│   │   ├── COD4Chernobyl.jpeg
+│   │   ├── CosmicSkies.jpg
+│   │   ├── Counter-Strike16.png
+│   │   ├── DarkWaters.png
+│   │   ├── default.png
+│   │   ├── Deltarune.png
+│   │   ├── DottieGreen.png
+│   │   ├── DoukutsuMonogatariCaveStory.png
+│   │   ├── Explore.png
+│   │   ├── FairyOfMusic.png
+│   │   ├── Fallen-Evanescence.png
+│   │   ├── Floral.png
+│   │   ├── FlowerBoy.png
+│   │   ├── GordonFreeman.png
+│   │   ├── Graffiti.png
+│   │   ├── Halo.png
+│   │   ├── Harmony.png
+│   │   ├── HarmonyTrans.png
+│   │   ├── Harvest.png
+│   │   ├── HatsuneMiku.jpeg
+│   │   ├── HelloKittyCRT.png
+│   │   ├── HelloKitty.png
+│   │   ├── hexes.png
+│   │   ├── HydroTouch.png
+│   │   ├── IbukiSuikaScene.png
+│   │   ├── IGOR-TylertheCreator.png
+│   │   ├── Inori.png
+│   │   ├── JogeirLiljedahl-TheWanderer.png
+│   │   ├── kakarotorgoku.png
+│   │   ├── KasaneTerritory.png
+│   │   ├── KonataIzumi.png
+│   │   ├── Lighthouse.png
+│   │   ├── LittleBigPlanet.png
+│   │   ├── LiveLights.png
+│   │   ├── MajorasMask.png
+│   │   ├── MesmerizingWhite.png
+│   │   ├── Meteora.jpeg
+│   │   ├── MinecraftLCETU9.png
+│   │   ├── MModule.png
+│   │   ├── Morty.png
+│   │   ├── mostwantedm3.png
+│   │   ├── MrOizo.png
+│   │   ├── MyLittlePony.png
+│   │   ├── niconicomiku.png
+│   │   ├── Nineties.png
+│   │   ├── Oranges.png
+│   │   ├── OuterWallCaveStory.png
+│   │   ├── Paramore.png
+│   │   ├── Persona2EternalPunishmentPSP.png
+│   │   ├── Persona2InnocentSinPSP.png
+│   │   ├── Persona3Boxart.png
+│   │   ├── Persona3.png
+│   │   ├── PopnMusic11.png
+│   │   ├── PurpleRain.png
+│   │   ├── RedBuilding.png
+│   │   ├── Revenge.png
+│   │   ├── RoadToWebTV.png
+│   │   ├── Robot.png
+│   │   ├── RunningFigure.png
+│   │   ├── Scenes.xml
+│   │   ├── Silhouette.png
+│   │   ├── Slipknot.jpeg
+│   │   ├── SonicRivals2.png
+│   │   ├── SouthParkBiggerLongerUncut.png
+│   │   ├── SunsetClouds.png
+│   │   ├── SunsetTrees.png
+│   │   ├── SuperMarioGalaxy.jpeg
+│   │   ├── SuperMarioSunshine.jpeg
+│   │   ├── SuperMeatBoy.png
+│   │   ├── TaigaAisakaScene.png
+│   │   ├── Theslime.jpeg
+│   │   ├── TheSwordOfOrion.png
+│   │   ├── TomodachiCollection.png
+│   │   ├── TransFlag.png
+│   │   ├── TripleBaka.png
+│   │   ├── TropicalLeafs.png
+│   │   ├── Twitteroldheader.png
+│   │   ├── VirtualInsanity.png
+│   │   ├── Vista.png
+│   │   ├── VolumeBeta.png
+│   │   ├── WhiteMountains.jpeg
+│   │   ├── Windows7BetaLoginScreen.png
+│   │   ├── Windows7Setup.png
+│   │   ├── WindowsVista-ServicePack2-NoGUIBoot.png
+│   │   ├── WindowsWhistler-Watercolor.png
+│   │   ├── XboxGreen.png
+│   │   ├── XboxGrunge.png
+│   │   ├── XboxPurple.png
+│   │   ├── Xperia1.png
+│   │   ├── Yakuza0DirectorsCut.png
+│   │   ├── Yakuza0.png
+│   │   ├── YakuzaKiwami.png
+│   │   ├── YakuzaTeto.png
+│   │   ├── zune_01.png
+│   │   ├── zune_02.png
+│   │   ├── zune_03.png
+│   │   ├── zune_04.png
+│   │   ├── zune_05.png
+│   │   └── zune_06.png
+│   ├── Settings
+│   │   └── SettingsManager.cs
+│   ├── Theme
+│   │   └── ThemeService.cs
+│   ├── ViewModels
+│   │   ├── Ad.cs
+│   │   ├── AeroboolTreeItem.cs
+│   │   ├── Attachment.cs
+│   │   ├── AttachmentsEditorItem.cs
+│   │   ├── AttachmentsEditorViewModel.cs
+│   │   ├── Base.cs
+│   │   ├── BasicTitlebar.cs
+│   │   ├── ChangeScene.cs
+│   │   ├── Channel.cs
+│   │   ├── Chat.cs
+│   │   ├── DebugWindow.cs
+│   │   ├── Dialog.cs
+│   │   ├── DM.cs
+│   │   ├── Embed.cs
+│   │   ├── Guild.cs
+│   │   ├── HomeButton.cs
+│   │   ├── Home.cs
+│   │   ├── HomeListModels.cs
+│   │   ├── HomeListViewVM.cs
+│   │   ├── ImagePreviewerViewModel.cs
+│   │   ├── Login.cs
+│   │   ├── Message.cs
+│   │   ├── News.cs
+│   │   ├── NonNativeItem.cs
+│   │   ├── Notice.cs
+│   │   ├── Notification.cs
+│   │   ├── Presence.cs
+│   │   ├── Scene.cs
+│   │   ├── Settings.cs
+│   │   └── User.cs
+│   ├── Voice
+│   │   └── VoiceManager.cs
+│   ├── WebDir
+│   │   └── hCaptcha.html
+│   └── Windows
+│       ├── About.xaml
+│       ├── About.xaml.cs
+│       ├── AerochatWindow.xaml
+│       ├── AerochatWindow.xaml.cs
+│       ├── ChangeScene.xaml
+│       ├── ChangeScene.xaml.cs
+│       ├── Chat.xaml
+│       ├── Chat.xaml.cs
+│       ├── ColorPicker.xaml
+│       ├── ColorPicker.xaml.cs
+│       ├── CrashReport.xaml
+│       ├── CrashReport.xaml.cs
+│       ├── DebugWindow.xaml
+│       ├── DebugWindow.xaml.cs
+│       ├── Dialog.xaml
+│       ├── Dialog.xaml.cs
+│       ├── DiscordLoginWV2.xaml
+│       ├── DiscordLoginWV2.xaml.cs
+│       ├── Home.xaml
+│       ├── Home.xaml.cs
+│       ├── ImagePreviewer.xaml
+│       ├── ImagePreviewer.xaml.cs
+│       ├── Login.xaml
+│       ├── Login.xaml.cs
+│       ├── MessageWindow.cs
+│       ├── NonNativeTooltip.xaml
+│       ├── NonNativeTooltip.xaml.cs
+│       ├── Notification.xaml
+│       ├── Notification.xaml.cs
+│       ├── Settings.xaml
+│       ├── Settings.xaml.cs
+│       ├── WebView2Frame.xaml
+│       └── WebView2Frame.xaml.cs
+├── Aerochat.Linux
+│   ├── Aerochat.Linux.csproj
+│   ├── Aerochat.Linux.slnx
+│   ├── App.axaml
+│   ├── App.axaml.cs
+│   ├── app.manifest
+│   ├── Assets
+│   │   ├── MainWnd.ico
+│   │   ├── MainWnd.png
+│   │   ├── notify.mp3
+│   │   ├── Resources
+│   │   │   ├── AttachmentsEditor
+│   │   │   │   ├── DeleteHover.png
+│   │   │   │   ├── Delete.png
+│   │   │   │   ├── DeletePressed.png
+│   │   │   │   ├── ItemBgHover.png
+│   │   │   │   ├── ItemBgKeyFocused.png
+│   │   │   │   ├── ItemBgSelected.png
+│   │   │   │   ├── PreviewImageBackground.png
+│   │   │   │   ├── PreviewNavButtonsSeparator.png
+│   │   │   │   ├── PreviewNextButtonHover.png
+│   │   │   │   ├── PreviewNextButton.png
+│   │   │   │   ├── PreviewNextButtonPressed.png
+│   │   │   │   ├── PreviewPrevButtonHover.png
+│   │   │   │   ├── PreviewPrevButton.png
+│   │   │   │   └── PreviewPrevButtonPressed.png
+│   │   │   ├── AudioPlayer
+│   │   │   │   ├── download.png
+│   │   │   │   ├── pause_disabled.png
+│   │   │   │   ├── pause_hover.png
+│   │   │   │   ├── pause.png
+│   │   │   │   ├── pause_pressed.png
+│   │   │   │   ├── pbfillend.png
+│   │   │   │   ├── play_disabled.png
+│   │   │   │   ├── play_hover.png
+│   │   │   │   ├── play.png
+│   │   │   │   ├── play_pressed.png
+│   │   │   │   ├── seekhandle_hover.png
+│   │   │   │   ├── seekhandle.png
+│   │   │   │   ├── seekhandle_pressed.png
+│   │   │   │   ├── volhandle_hover.png
+│   │   │   │   ├── volhandle.png
+│   │   │   │   ├── volhandle_pressed.png
+│   │   │   │   ├── vol_high.png
+│   │   │   │   ├── vol_low.png
+│   │   │   │   ├── vol_mid.png
+│   │   │   │   └── vol_muted.png
+│   │   │   ├── bg-1.png
+│   │   │   ├── BoolEditor
+│   │   │   │   ├── Class.png
+│   │   │   │   ├── Field.png
+│   │   │   │   └── Namespace.png
+│   │   │   ├── Button
+│   │   │   │   ├── Disabled.png
+│   │   │   │   ├── Focused.png
+│   │   │   │   ├── Hover.png
+│   │   │   │   ├── Normal.png
+│   │   │   │   └── Pressed.png
+│   │   │   ├── ChangeScene
+│   │   │   │   ├── Active.png
+│   │   │   │   ├── Background.png
+│   │   │   │   ├── Bottom.png
+│   │   │   │   └── Hover.png
+│   │   │   ├── Dialog
+│   │   │   │   └── Background.png
+│   │   │   ├── Dropdown
+│   │   │   │   ├── DropdownExpandedHover.png
+│   │   │   │   ├── DropdownExpanded.png
+│   │   │   │   ├── DropdownHover.png
+│   │   │   │   └── Dropdown.png
+│   │   │   ├── Dropdown.png
+│   │   │   ├── Emoji
+│   │   │   │   ├── Angel.png
+│   │   │   │   ├── Anger.png
+│   │   │   │   ├── Bat.png
+│   │   │   │   ├── Beach.png
+│   │   │   │   ├── Beer.png
+│   │   │   │   ├── BrokenHeart.png
+│   │   │   │   ├── Cake.png
+│   │   │   │   ├── Camera.png
+│   │   │   │   ├── Car.png
+│   │   │   │   ├── Cat.png
+│   │   │   │   ├── CellPhone.png
+│   │   │   │   ├── Cigarette.png
+│   │   │   │   ├── Clock.png
+│   │   │   │   ├── Coffee.png
+│   │   │   │   ├── Computer.png
+│   │   │   │   ├── Confused.png
+│   │   │   │   ├── Conversation.png
+│   │   │   │   ├── CrossedFingers.png
+│   │   │   │   ├── Cuffs.png
+│   │   │   │   ├── Currency.png
+│   │   │   │   ├── Demon.png
+│   │   │   │   ├── Discontent.png
+│   │   │   │   ├── Dog.png
+│   │   │   │   ├── Film.png
+│   │   │   │   ├── Flushed.png
+│   │   │   │   ├── Football.png
+│   │   │   │   ├── Frown.png
+│   │   │   │   ├── Goat.png
+│   │   │   │   ├── Grin.png
+│   │   │   │   ├── Heart.png
+│   │   │   │   ├── HighFive.png
+│   │   │   │   ├── Jump.png
+│   │   │   │   ├── Lightbuild.png
+│   │   │   │   ├── LipBite.png
+│   │   │   │   ├── Mail.png
+│   │   │   │   ├── Man.png
+│   │   │   │   ├── Moon.png
+│   │   │   │   ├── Music.png
+│   │   │   │   ├── Nerd.png
+│   │   │   │   ├── Party.png
+│   │   │   │   ├── Phone.png
+│   │   │   │   ├── Pizza.png
+│   │   │   │   ├── Plane.png
+│   │   │   │   ├── Plate.png
+│   │   │   │   ├── Present.png
+│   │   │   │   ├── Rabbit.png
+│   │   │   │   ├── Rage.png
+│   │   │   │   ├── Rainbow.png
+│   │   │   │   ├── Rain.png
+│   │   │   │   ├── ReachLeft.png
+│   │   │   │   ├── ReachRight.png
+│   │   │   │   ├── RollingEyes.png
+│   │   │   │   ├── Rose.png
+│   │   │   │   ├── Rose_Wilter.png
+│   │   │   │   ├── Sheep.png
+│   │   │   │   ├── Sick.png
+│   │   │   │   ├── Smile.png
+│   │   │   │   ├── Snail.png
+│   │   │   │   ├── Sob.png
+│   │   │   │   ├── Soup.png
+│   │   │   │   ├── Star.png
+│   │   │   │   ├── Sunglasses.png
+│   │   │   │   ├── Sun.png
+│   │   │   │   ├── Surprised.png
+│   │   │   │   ├── Surprise.png
+│   │   │   │   ├── Thinking.png
+│   │   │   │   ├── ThumbsDown.png
+│   │   │   │   ├── ThumbsUp.png
+│   │   │   │   ├── Thunder.png
+│   │   │   │   ├── Tongue.png
+│   │   │   │   ├── Tortoise.png
+│   │   │   │   ├── Umbrella.png
+│   │   │   │   ├── Wine.png
+│   │   │   │   ├── Wink.png
+│   │   │   │   ├── WLM.png
+│   │   │   │   ├── Woman.png
+│   │   │   │   ├── WTF.png
+│   │   │   │   ├── Xbox.png
+│   │   │   │   ├── Yawn.png
+│   │   │   │   └── ZipMouth.png
+│   │   │   ├── Frames
+│   │   │   │   ├── LargeFrameActiveAnimation.png
+│   │   │   │   ├── LargeFrameActive.png
+│   │   │   │   ├── LargeFrameDndAnimation.png
+│   │   │   │   ├── LargeFrameDnd.png
+│   │   │   │   ├── LargeFrameIdleAnimation.png
+│   │   │   │   ├── LargeFrameIdle.png
+│   │   │   │   ├── LargeFrameOffline.png
+│   │   │   │   ├── MediumFrameActiveAnimation.png
+│   │   │   │   ├── MediumFrameActive.png
+│   │   │   │   ├── MediumFrameDndAnimation.png
+│   │   │   │   ├── MediumFrameDnd.png
+│   │   │   │   ├── MediumFrameIdleAnimation.png
+│   │   │   │   ├── MediumFrameIdle.png
+│   │   │   │   ├── MediumFrameOffline.png
+│   │   │   │   ├── PlaceholderPfp.png
+│   │   │   │   ├── SmallFrameActiveAnimation.png
+│   │   │   │   ├── SmallFrameActive.png
+│   │   │   │   ├── SmallFrameDndAnimation.png
+│   │   │   │   ├── SmallFrameDnd.png
+│   │   │   │   ├── SmallFrameIdleAnimation.png
+│   │   │   │   ├── SmallFrameIdle.png
+│   │   │   │   ├── SmallFrameOffline.png
+│   │   │   │   ├── XLFrameActiveAnimation.png
+│   │   │   │   ├── XLFrameActive.png
+│   │   │   │   ├── XLFrameDndAnimation.png
+│   │   │   │   ├── XLFrameDnd.png
+│   │   │   │   ├── XLFrameIdleAnimation.png
+│   │   │   │   ├── XLFrameIdle.png
+│   │   │   │   ├── XLFrameOffline.png
+│   │   │   │   ├── XSFrameActiveM.png
+│   │   │   │   ├── XSFrameActive.png
+│   │   │   │   ├── XSFrameDndM.png
+│   │   │   │   ├── XSFrameDnd.png
+│   │   │   │   ├── XSFrameIdleM.png
+│   │   │   │   ├── XSFrameIdle.png
+│   │   │   │   ├── XSFrameOfflineM.png
+│   │   │   │   └── XSFrameOffline.png
+│   │   │   ├── Home
+│   │   │   │   ├── AddFriend.png
+│   │   │   │   ├── BottomSeparator.png
+│   │   │   │   ├── ChangeLayout.png
+│   │   │   │   ├── CloseHover.png
+│   │   │   │   ├── Close.png
+│   │   │   │   ├── Dropdown.png
+│   │   │   │   ├── ErrorIcon.png
+│   │   │   │   ├── Error.png
+│   │   │   │   ├── InfoIcon.png
+│   │   │   │   ├── Info.png
+│   │   │   │   ├── LeftActive.png
+│   │   │   │   ├── LeftHover.png
+│   │   │   │   ├── Left.png
+│   │   │   │   ├── Mail.png
+│   │   │   │   ├── PageClose.png
+│   │   │   │   ├── PageOpen.png
+│   │   │   │   ├── RightActive.png
+│   │   │   │   ├── RightHover.png
+│   │   │   │   ├── Right.png
+│   │   │   │   ├── SearchBarActive.png
+│   │   │   │   ├── SearchBarHover.png
+│   │   │   │   ├── SearchBar.png
+│   │   │   │   ├── SearchIconBlue.png
+│   │   │   │   ├── SearchIconGray.png
+│   │   │   │   ├── ShowMenu.png
+│   │   │   │   ├── StatusTextBoxBg.png
+│   │   │   │   ├── TreeActive.png
+│   │   │   │   ├── TreeHoverActive.png
+│   │   │   │   ├── TreeHover.png
+│   │   │   │   ├── WarningIcon.png
+│   │   │   │   └── Warning.png
+│   │   │   ├── Icons
+│   │   │   │   ├── DiscordIcon.png
+│   │   │   │   └── MainWnd.png
+│   │   │   ├── ImagePreviewer
+│   │   │   │   ├── CaptionActive.png
+│   │   │   │   ├── CaptionClose.png
+│   │   │   │   ├── CaptionHover.png
+│   │   │   │   ├── OpenActive.png
+│   │   │   │   ├── OpenHover.png
+│   │   │   │   └── Open.png
+│   │   │   ├── Login
+│   │   │   │   └── Frame.png
+│   │   │   ├── Message
+│   │   │   │   ├── Background.png
+│   │   │   │   ├── BottomSeparator.png
+│   │   │   │   ├── BottomToolbar.png
+│   │   │   │   ├── Colors.png
+│   │   │   │   ├── Embed.png
+│   │   │   │   ├── Expand.png
+│   │   │   │   ├── Group.png
+│   │   │   │   ├── InputBackground.png
+│   │   │   │   ├── LeaveCall.png
+│   │   │   │   ├── Nudge.png
+│   │   │   │   ├── Pen.png
+│   │   │   │   ├── RedoInactive.png
+│   │   │   │   ├── Redo.png
+│   │   │   │   ├── Separator.png
+│   │   │   │   ├── SpeechBubbleArrow.png
+│   │   │   │   ├── Text.png
+│   │   │   │   ├── ToolbarActive.png
+│   │   │   │   ├── ToolbarHover.png
+│   │   │   │   ├── TopBarBg.png
+│   │   │   │   ├── Typing.png
+│   │   │   │   ├── UndoInactive.png
+│   │   │   │   ├── Undo.png
+│   │   │   │   └── 消しゴム.png
+│   │   │   ├── msgres_4000_1473_var.png
+│   │   │   ├── NonNativeTooltip
+│   │   │   │   ├── ItemActive.png
+│   │   │   │   └── ItemHover.png
+│   │   │   ├── Notification
+│   │   │   │   ├── Background.png
+│   │   │   │   ├── CloseHover.png
+│   │   │   │   ├── Close.png
+│   │   │   │   └── Logo.png
+│   │   │   ├── ScrollBar
+│   │   │   │   ├── Active.png
+│   │   │   │   ├── DownGlyphActive.png
+│   │   │   │   ├── DownGlyphHover.png
+│   │   │   │   ├── DownGlyphInactive.png
+│   │   │   │   ├── HorzScrollBarBg.png
+│   │   │   │   ├── HorzThumbActive.png
+│   │   │   │   ├── HorzThumbGripperActive.png
+│   │   │   │   ├── HorzThumbGripperHover.png
+│   │   │   │   ├── HorzThumbGripperInactive.png
+│   │   │   │   ├── HorzThumbHover.png
+│   │   │   │   ├── HorzThumbInactive.png
+│   │   │   │   ├── Hover.png
+│   │   │   │   ├── Inactive.png
+│   │   │   │   ├── JumpToBottomActive.png
+│   │   │   │   ├── JumpToBottomHover.png
+│   │   │   │   ├── JumpToBottomInactive.png
+│   │   │   │   ├── JumpToLeftActive.png
+│   │   │   │   ├── JumpToLeftHover.png
+│   │   │   │   ├── JumpToLeftInactive.png
+│   │   │   │   ├── JumpToRightActive.png
+│   │   │   │   ├── JumpToRightHover.png
+│   │   │   │   ├── JumpToRightInactive.png
+│   │   │   │   ├── JumpToTopActive.png
+│   │   │   │   ├── JumpToTopHover.png
+│   │   │   │   ├── JumpToTopInactive.png
+│   │   │   │   ├── LeftGlyphActive.png
+│   │   │   │   ├── LeftGlyphHover.png
+│   │   │   │   ├── LeftGlyphInactive.png
+│   │   │   │   ├── RightGlyphActive.png
+│   │   │   │   ├── RightGlyphHover.png
+│   │   │   │   ├── RightGlyphInactive.png
+│   │   │   │   ├── UpGlyphActive.png
+│   │   │   │   ├── UpGlyphHover.png
+│   │   │   │   ├── UpGlyphInactive.png
+│   │   │   │   ├── VertScrollBarBg.png
+│   │   │   │   ├── VertThumbGripperActive.png
+│   │   │   │   ├── VertThumbGripperHover.png
+│   │   │   │   └── VertThumbGripperInactive.png
+│   │   │   ├── Sounds
+│   │   │   │   ├── newalert.wav
+│   │   │   │   ├── newemail.wav
+│   │   │   │   ├── nudge.wav
+│   │   │   │   ├── online.wav
+│   │   │   │   ├── outgoing.wav
+│   │   │   │   ├── phone.wav
+│   │   │   │   └── type.wav
+│   │   │   ├── Speen.png
+│   │   │   ├── Status
+│   │   │   │   ├── Listening.png
+│   │   │   │   └── Playing.png
+│   │   │   ├── Titlebar
+│   │   │   │   ├── Separator.png
+│   │   │   │   ├── Vista
+│   │   │   │   │   ├── CloseActive.png
+│   │   │   │   │   ├── CloseHover.png
+│   │   │   │   │   ├── CloseInactive.png
+│   │   │   │   │   ├── Close.png
+│   │   │   │   │   ├── CloseSingleActive.png
+│   │   │   │   │   ├── CloseSingleHover.png
+│   │   │   │   │   ├── CloseSingleInactive.png
+│   │   │   │   │   ├── CloseSingle.png
+│   │   │   │   │   ├── MaximizeActive.png
+│   │   │   │   │   ├── MaximizeHover.png
+│   │   │   │   │   ├── MaximizeInactive.png
+│   │   │   │   │   ├── Maximize.png
+│   │   │   │   │   ├── MinimizeActive.png
+│   │   │   │   │   ├── MinimizeHover.png
+│   │   │   │   │   ├── MinimizeInactive.png
+│   │   │   │   │   └── Minimize.png
+│   │   │   │   └── XP
+│   │   │   │       ├── CloseActive.png
+│   │   │   │       ├── CloseHover.png
+│   │   │   │       ├── CloseInactive.png
+│   │   │   │       ├── Close.png
+│   │   │   │       ├── CloseSingleActive.png
+│   │   │   │       ├── CloseSingleHover.png
+│   │   │   │       ├── CloseSingleInactive.png
+│   │   │   │       ├── CloseSingle.png
+│   │   │   │       ├── MaximizeActive.png
+│   │   │   │       ├── MaximizeHover.png
+│   │   │   │       ├── MaximizeInactive.png
+│   │   │   │       ├── Maximize.png
+│   │   │   │       ├── MinimizeActive.png
+│   │   │   │       ├── MinimizeHover.png
+│   │   │   │       ├── MinimizeInactive.png
+│   │   │   │       └── Minimize.png
+│   │   │   ├── top-blue-thing.png
+│   │   │   ├── top-blue-thing-transparent.png
+│   │   │   └── Tray
+│   │   │       ├── Active.ico
+│   │   │       ├── Dnd.ico
+│   │   │       ├── Idle.ico
+│   │   │       └── Offline.ico
+│   │   └── Scenes
+│   │       ├── 0001.png
+│   │       ├── 0002.png
+│   │       ├── 0003.png
+│   │       ├── 0004.png
+│   │       ├── 0005.png
+│   │       ├── 0006.png
+│   │       ├── 0007.png
+│   │       ├── 0008.png
+│   │       ├── 20YearHumanity.png
+│   │       ├── AbstractTurquoise.jpg
+│   │       ├── Aerochat.png
+│   │       ├── AeroTrail.png
+│   │       ├── Ambiance.png
+│   │       ├── AphexTwin.png
+│   │       ├── Arrowfunk.png
+│   │       ├── BetaFish.png
+│   │       ├── BLiNXTheTimeSweeper.png
+│   │       ├── Bliss.png
+│   │       ├── BlueWaves.png
+│   │       ├── BrightLines.png
+│   │       ├── ButterflyPattern.png
+│   │       ├── CarbonFiber.png
+│   │       ├── Catstronaut.png
+│   │       ├── Caustics.jpg
+│   │       ├── chiikawa.png
+│   │       ├── Cloudsdale.png
+│   │       ├── COD4Chernobyl.jpeg
+│   │       ├── CosmicSkies.jpg
+│   │       ├── Counter-Strike16.png
+│   │       ├── DarkWaters.png
+│   │       ├── default.png
+│   │       ├── Deltarune.png
+│   │       ├── DottieGreen.png
+│   │       ├── DoukutsuMonogatariCaveStory.png
+│   │       ├── Explore.png
+│   │       ├── FairyOfMusic.png
+│   │       ├── Fallen-Evanescence.png
+│   │       ├── Floral.png
+│   │       ├── FlowerBoy.png
+│   │       ├── GordonFreeman.png
+│   │       ├── Graffiti.png
+│   │       ├── Halo.png
+│   │       ├── Harmony.png
+│   │       ├── HarmonyTrans.png
+│   │       ├── Harvest.png
+│   │       ├── HatsuneMiku.jpeg
+│   │       ├── HelloKittyCRT.png
+│   │       ├── HelloKitty.png
+│   │       ├── hexes.png
+│   │       ├── HydroTouch.png
+│   │       ├── IbukiSuikaScene.png
+│   │       ├── IGOR-TylertheCreator.png
+│   │       ├── Inori.png
+│   │       ├── JogeirLiljedahl-TheWanderer.png
+│   │       ├── kakarotorgoku.png
+│   │       ├── KasaneTerritory.png
+│   │       ├── KonataIzumi.png
+│   │       ├── Lighthouse.png
+│   │       ├── LittleBigPlanet.png
+│   │       ├── LiveLights.png
+│   │       ├── MajorasMask.png
+│   │       ├── MesmerizingWhite.png
+│   │       ├── Meteora.jpeg
+│   │       ├── MinecraftLCETU9.png
+│   │       ├── MModule.png
+│   │       ├── Morty.png
+│   │       ├── mostwantedm3.png
+│   │       ├── MrOizo.png
+│   │       ├── MyLittlePony.png
+│   │       ├── niconicomiku.png
+│   │       ├── Nineties.png
+│   │       ├── Oranges.png
+│   │       ├── OuterWallCaveStory.png
+│   │       ├── Paramore.png
+│   │       ├── Persona2EternalPunishmentPSP.png
+│   │       ├── Persona2InnocentSinPSP.png
+│   │       ├── Persona3Boxart.png
+│   │       ├── Persona3.png
+│   │       ├── PopnMusic11.png
+│   │       ├── PurpleRain.png
+│   │       ├── RedBuilding.png
+│   │       ├── Revenge.png
+│   │       ├── RoadToWebTV.png
+│   │       ├── Robot.png
+│   │       ├── RunningFigure.png
+│   │       ├── Scenes.xml
+│   │       ├── Silhouette.png
+│   │       ├── Slipknot.jpeg
+│   │       ├── SonicRivals2.png
+│   │       ├── SouthParkBiggerLongerUncut.png
+│   │       ├── SunsetClouds.png
+│   │       ├── SunsetTrees.png
+│   │       ├── SuperMarioGalaxy.jpeg
+│   │       ├── SuperMarioSunshine.jpeg
+│   │       ├── SuperMeatBoy.png
+│   │       ├── TaigaAisakaScene.png
+│   │       ├── Theslime.jpeg
+│   │       ├── TheSwordOfOrion.png
+│   │       ├── TomodachiCollection.png
+│   │       ├── TransFlag.png
+│   │       ├── TripleBaka.png
+│   │       ├── TropicalLeafs.png
+│   │       ├── Twitteroldheader.png
+│   │       ├── VirtualInsanity.png
+│   │       ├── Vista.png
+│   │       ├── VolumeBeta.png
+│   │       ├── WhiteMountains.jpeg
+│   │       ├── Windows7BetaLoginScreen.png
+│   │       ├── Windows7Setup.png
+│   │       ├── WindowsVista-ServicePack2-NoGUIBoot.png
+│   │       ├── WindowsWhistler-Watercolor.png
+│   │       ├── XboxGreen.png
+│   │       ├── XboxGrunge.png
+│   │       ├── XboxPurple.png
+│   │       ├── Xperia1.png
+│   │       ├── Yakuza0DirectorsCut.png
+│   │       ├── Yakuza0.png
+│   │       ├── YakuzaKiwami.png
+│   │       ├── YakuzaTeto.png
+│   │       ├── zune_01.png
+│   │       ├── zune_02.png
+│   │       ├── zune_03.png
+│   │       ├── zune_04.png
+│   │       ├── zune_05.png
+│   │       └── zune_06.png
+│   ├── build.sh
+│   ├── Controls
+│   │   ├── NineSlice.cs
+│   │   └── ProfilePictureFrame.cs
+│   ├── make-appimage.sh
+│   ├── obj
+│   │   ├── Aerochat.Linux.csproj.nuget.dgspec.json
+│   │   ├── Aerochat.Linux.csproj.nuget.g.props
+│   │   ├── Aerochat.Linux.csproj.nuget.g.targets
+│   │   ├── Debug
+│   │   │   └── net10.0
+│   │   │       ├── Aerochat.8AED7106.Up2Date
+│   │   │       ├── Aerochat.dll
+│   │   │       ├── Aerochat.Linux.AssemblyInfo.cs
+│   │   │       ├── Aerochat.Linux.AssemblyInfoInputs.cache
+│   │   │       ├── Aerochat.Linux.assets.cache
+│   │   │       ├── Aerochat.Linux.csproj.AssemblyReference.cache
+│   │   │       ├── Aerochat.Linux.csproj.CoreCompileInputs.cache
+│   │   │       ├── Aerochat.Linux.csproj.FileListAbsolute.txt
+│   │   │       ├── Aerochat.Linux.GeneratedMSBuildEditorConfig.editorconfig
+│   │   │       ├── Aerochat.Linux.genruntimeconfig.cache
+│   │   │       ├── Aerochat.Linux.GlobalUsings.g.cs
+│   │   │       ├── Aerochat.Linux.sourcelink.json
+│   │   │       ├── Aerochat.pdb
+│   │   │       ├── apphost
+│   │   │       ├── Avalonia
+│   │   │       │   ├── references
+│   │   │       │   ├── resources
+│   │   │       │   └── Resources.Inputs.cache
+│   │   │       ├── ref
+│   │   │       │   └── Aerochat.dll
+│   │   │       └── refint
+│   │   │           └── Aerochat.dll
+│   │   ├── project.assets.json
+│   │   ├── project.nuget.cache
+│   │   └── Release
+│   │       └── net10.0
+│   │           ├── Aerochat.8AED7106.Up2Date
+│   │           ├── Aerochat.dll
+│   │           ├── Aerochat.Linux.AssemblyInfo.cs
+│   │           ├── Aerochat.Linux.AssemblyInfoInputs.cache
+│   │           ├── Aerochat.Linux.assets.cache
+│   │           ├── Aerochat.Linux.csproj.AssemblyReference.cache
+│   │           ├── Aerochat.Linux.csproj.CoreCompileInputs.cache
+│   │           ├── Aerochat.Linux.csproj.FileListAbsolute.txt
+│   │           ├── Aerochat.Linux.GeneratedMSBuildEditorConfig.editorconfig
+│   │           ├── Aerochat.Linux.genruntimeconfig.cache
+│   │           ├── Aerochat.Linux.GlobalUsings.g.cs
+│   │           ├── Aerochat.Linux.sourcelink.json
+│   │           ├── Aerochat.pdb
+│   │           ├── apphost
+│   │           ├── Avalonia
+│   │           │   ├── references
+│   │           │   ├── resources
+│   │           │   └── Resources.Inputs.cache
+│   │           ├── linux-x64
+│   │           │   ├── Aerochat.8AED7106.Up2Date
+│   │           │   ├── Aerochat.deps.json
+│   │           │   ├── Aerochat.dll
+│   │           │   ├── Aerochat.Linux.AssemblyInfo.cs
+│   │           │   ├── Aerochat.Linux.AssemblyInfoInputs.cache
+│   │           │   ├── Aerochat.Linux.assets.cache
+│   │           │   ├── Aerochat.Linux.csproj.AssemblyReference.cache
+│   │           │   ├── Aerochat.Linux.csproj.CoreCompileInputs.cache
+│   │           │   ├── Aerochat.Linux.csproj.FileListAbsolute.txt
+│   │           │   ├── Aerochat.Linux.genbundle.cache
+│   │           │   ├── Aerochat.Linux.GeneratedMSBuildEditorConfig.editorconfig
+│   │           │   ├── Aerochat.Linux.genpublishdeps.cache
+│   │           │   ├── Aerochat.Linux.genruntimeconfig.cache
+│   │           │   ├── Aerochat.Linux.GlobalUsings.g.cs
+│   │           │   ├── Aerochat.Linux.sourcelink.json
+│   │           │   ├── Aerochat.pdb
+│   │           │   ├── apphost
+│   │           │   ├── Avalonia
+│   │           │   │   ├── references
+│   │           │   │   ├── resources
+│   │           │   │   └── Resources.Inputs.cache
+│   │           │   ├── PublishOutputs.64a61e9a75.txt
+│   │           │   ├── PublishOutputs.b400ddfca0.txt
+│   │           │   ├── PublishOutputs.fef4db47e7.txt
+│   │           │   ├── ref
+│   │           │   │   └── Aerochat.dll
+│   │           │   ├── refint
+│   │           │   │   └── Aerochat.dll
+│   │           │   └── singlefilehost
+│   │           ├── ref
+│   │           │   └── Aerochat.dll
+│   │           └── refint
+│   │               └── Aerochat.dll
+│   ├── Program.cs
+│   ├── README.md
+│   ├── Services
+│   │   ├── AvatarService.cs
+│   │   ├── DiscordService.cs
+│   │   ├── MediaService.cs
+│   │   ├── NotificationService.cs
+│   │   ├── SceneService.cs
+│   │   ├── SettingsService.cs
+│   │   ├── SoundService.cs
+│   │   └── StatusHelper.cs
+│   ├── Styles
+│   │   └── WlmTheme.axaml
+│   ├── ViewModels
+│   │   ├── AttachmentViewModel.cs
+│   │   ├── ChangeSceneViewModel.cs
+│   │   ├── ChatViewModel.cs
+│   │   ├── Commands.cs
+│   │   ├── HomeItemViewModel.cs
+│   │   ├── HomeViewModel.cs
+│   │   ├── MessageViewModel.cs
+│   │   ├── NotificationViewModel.cs
+│   │   ├── SceneViewModel.cs
+│   │   ├── UserViewModel.cs
+│   │   └── ViewModelBase.cs
+│   └── Views
+│       ├── ChangeSceneWindow.axaml
+│       ├── ChangeSceneWindow.axaml.cs
+│       ├── ChatWindow.axaml
+│       ├── ChatWindow.axaml.cs
+│       ├── HomeWindow.axaml
+│       ├── HomeWindow.axaml.cs
+│       ├── ImageViewWindow.axaml
+│       ├── ImageViewWindow.axaml.cs
+│       ├── LoginWindow.axaml
+│       ├── LoginWindow.axaml.cs
+│       ├── NotificationWindow.axaml
+│       └── NotificationWindow.axaml.cs
+├── Aerochat.sln
+├── Aerotest
+│   ├── Aerotest.csproj
+│   ├── ChatRequests
+│   │   └── GivenARequestToSendAnImage.cs
+│   └── WpfTestBootstrap.cs
+├── Aerotest.csproj
+├── Aerovoice
+│   ├── Aerovoice.csproj
+│   ├── Clients
+│   │   ├── UDPClient.cs
+│   │   └── VoiceSocket.cs
+│   ├── Crypts
+│   │   ├── AeadAes256Gcm.cs
+│   │   ├── AeadAes256GcmRtpSize.cs
+│   │   ├── AeadXChaCha20Poly1305RtpSize.cs
+│   │   ├── BaseCrypt.cs
+│   │   ├── XSalsa20Poly1305.cs
+│   │   ├── XSalsa20Poly1305Lite.cs
+│   │   ├── XSalsa20Poly1305LiteRtpSize.cs
+│   │   └── XSalsa20Poly1305Suffix.cs
+│   ├── Decoders
+│   │   ├── ConcentusDecoder.cs
+│   │   ├── IDecoder.cs
+│   │   └── OpusDotNetDecoder.cs
+│   ├── Encoders
+│   │   ├── ConcentusEncoder.cs
+│   │   └── IEncoder.cs
+│   ├── Logger
+│   │   └── Logger.cs
+│   ├── Players
+│   │   ├── IPlayer.cs
+│   │   └── NAudioPlayer.cs
+│   ├── README.md
+│   ├── Recorders
+│   │   ├── BaseRecorder.cs
+│   │   └── NAudioRecorder.cs
+│   └── Timestamp
+│       └── RTPTimestamp.cs
+├── DSP
+│   ├── BUILDING.md
+│   ├── CONTRIBUTING.md
+│   ├── DiscordSharp.LICENSE
+│   ├── docs
+│   │   ├── api
+│   │   │   └── index.md
+│   │   ├── articles
+│   │   │   ├── advanced_topics
+│   │   │   │   ├── buttons.md
+│   │   │   │   ├── generic_host.md
+│   │   │   │   └── selects.md
+│   │   │   ├── audio
+│   │   │   │   ├── lavalink
+│   │   │   │   │   ├── configuration.md
+│   │   │   │   │   ├── music_commands.md
+│   │   │   │   │   └── setup.md
+│   │   │   │   └── voicenext
+│   │   │   │       ├── prerequisites.md
+│   │   │   │       ├── receive.md
+│   │   │   │       └── transmit.md
+│   │   │   ├── basics
+│   │   │   │   ├── bot_account.md
+│   │   │   │   └── first_bot.md
+│   │   │   ├── beyond_basics
+│   │   │   │   ├── events.md
+│   │   │   │   ├── intents.md
+│   │   │   │   ├── logging
+│   │   │   │   │   ├── default.md
+│   │   │   │   │   └── third_party.md
+│   │   │   │   ├── messagebuilder.md
+│   │   │   │   └── sharding.md
+│   │   │   ├── commands
+│   │   │   │   ├── argument_converters.md
+│   │   │   │   ├── command_attributes.md
+│   │   │   │   ├── command_handler.md
+│   │   │   │   ├── dependency_injection.md
+│   │   │   │   ├── help_formatter.md
+│   │   │   │   └── intro.md
+│   │   │   ├── hosting.md
+│   │   │   ├── interactivity.md
+│   │   │   ├── migration
+│   │   │   │   ├── 2x_to_3x.md
+│   │   │   │   ├── 3x_to_4x.md
+│   │   │   │   └── dsharp.md
+│   │   │   ├── misc
+│   │   │   │   ├── debug_symbols.md
+│   │   │   │   ├── nightly_builds.md
+│   │   │   │   └── reporting_issues.md
+│   │   │   ├── preamble.md
+│   │   │   ├── slash_commands.md
+│   │   │   └── toc.yml
+│   │   ├── docfx.json
+│   │   ├── faq.md
+│   │   ├── filter_config.yml
+│   │   ├── images
+│   │   │   ├── advanced_topics_buttons_01.png
+│   │   │   ├── advanced_topics_buttons_02.png
+│   │   │   ├── advanced_topics_selects_01.png
+│   │   │   ├── advanced_topics_selects_02.png
+│   │   │   ├── basics_bot_account_01.png
+│   │   │   ├── basics_bot_account_02.png
+│   │   │   ├── basics_bot_account_03.png
+│   │   │   ├── basics_bot_account_04.png
+│   │   │   ├── basics_bot_account_05.png
+│   │   │   ├── basics_bot_account_06.png
+│   │   │   ├── basics_bot_account_07.png
+│   │   │   ├── basics_bot_account_08.png
+│   │   │   ├── basics_bot_account_09.png
+│   │   │   ├── basics_first_bot_01.png
+│   │   │   ├── basics_first_bot_02.png
+│   │   │   ├── basics_first_bot_03.png
+│   │   │   ├── basics_first_bot_04.png
+│   │   │   ├── basics_first_bot_05.png
+│   │   │   ├── basics_first_bot_06.png
+│   │   │   ├── basics_first_bot_07.png
+│   │   │   ├── basics_first_bot_08.png
+│   │   │   ├── basics_first_bot_10.png
+│   │   │   ├── basics_first_bot_11.png
+│   │   │   ├── basics_first_bot_12.png
+│   │   │   ├── basics_first_bot_13.png
+│   │   │   ├── beyond_basics_logging_default_01.png
+│   │   │   ├── beyond_basics_logging_default_02.png
+│   │   │   ├── beyond_basics_logging_default_03.png
+│   │   │   ├── beyond_basics_logging_third_party_01.png
+│   │   │   ├── beyond_basics_logging_user_01.png
+│   │   │   ├── beyond_basics_logging_user_02.png
+│   │   │   ├── beyond_basics_logging_user_03.png
+│   │   │   ├── beyond_basics_logging_user_04.png
+│   │   │   ├── beyond_basics_logging_user_05.png
+│   │   │   ├── beyond_basics_logging_user_06.png
+│   │   │   ├── commands_argument_converters_01.png
+│   │   │   ├── commands_command_attributes_01.png
+│   │   │   ├── commands_dependency_injection_01.png
+│   │   │   ├── commands_help_formatter_01.png
+│   │   │   ├── commands_help_formatter_02.png
+│   │   │   ├── commands_intro_01.png
+│   │   │   ├── commands_intro_02.png
+│   │   │   ├── commands_intro_03.png
+│   │   │   ├── commands_intro_04.png
+│   │   │   ├── commands_intro_05.png
+│   │   │   ├── commands_intro_06.png
+│   │   │   ├── commands_intro_07.png
+│   │   │   ├── commands_intro_08.png
+│   │   │   ├── faq_01.png
+│   │   │   ├── faq_02.png
+│   │   │   ├── faq_03.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── Intents.png
+│   │   │   ├── interactivity_01.png
+│   │   │   ├── interactivity_02.png
+│   │   │   ├── interactivity_03.png
+│   │   │   ├── interactivity_04.png
+│   │   │   ├── interactivity_05.png
+│   │   │   ├── logobig.png
+│   │   │   ├── logo.png
+│   │   │   ├── voicenext_receive_01.png
+│   │   │   └── voicenext_transmit_01.png
+│   │   ├── index.md
+│   │   ├── langword_mapping.yml
+│   │   ├── natives
+│   │   │   ├── index.md
+│   │   │   ├── vnext_natives_win32_x64.zip
+│   │   │   ├── vnext_natives_win32_x64.zip.checksums
+│   │   │   ├── vnext_natives_win32_x64.zip.checksums.sig
+│   │   │   ├── vnext_natives_win32_x86.zip
+│   │   │   ├── vnext_natives_win32_x86.zip.checksums
+│   │   │   └── vnext_natives_win32_x86.zip.checksums.sig
+│   │   └── toc.yml
+│   ├── DSharpPlus
+│   │   ├── Aerotest.csproj
+│   │   ├── AnsiColor.cs
+│   │   ├── AsyncEvents
+│   │   │   ├── AsyncEvent`2.cs
+│   │   │   ├── AsyncEventArgs.cs
+│   │   │   ├── AsyncEvent.cs
+│   │   │   └── AsyncEventHandler.cs
+│   │   ├── AsyncManualResetEvent.cs
+│   │   ├── BaseExtension.cs
+│   │   ├── bin
+│   │   │   ├── Debug
+│   │   │   │   └── netstandard2.0
+│   │   │   │       ├── DSharpPlus.deps.json
+│   │   │   │       ├── DSharpPlus.dll
+│   │   │   │       ├── DSharpPlus.pdb
+│   │   │   │       └── DSharpPlus.xml
+│   │   │   └── Release
+│   │   │       └── netstandard2.0
+│   │   │           ├── DSharpPlus.deps.json
+│   │   │           ├── DSharpPlus.dll
+│   │   │           ├── DSharpPlus.pdb
+│   │   │           └── DSharpPlus.xml
+│   │   ├── Clients
+│   │   │   ├── BaseDiscordClient.cs
+│   │   │   ├── DiscordClient.cs
+│   │   │   ├── DiscordClient.Dispatch.cs
+│   │   │   ├── DiscordClient.Events.cs
+│   │   │   ├── DiscordClient.WebSocket.cs
+│   │   │   └── DiscordWebhookClient.cs
+│   │   ├── DiscordConfiguration.cs
+│   │   ├── DiscordIntents.cs
+│   │   ├── DSharpPlus.csproj
+│   │   ├── DSharpPlus.csproj.DotSettings
+│   │   ├── Entities
+│   │   │   ├── Application
+│   │   │   │   └── DiscordApplication.cs
+│   │   │   ├── BaseDiscordMessageBuilder.cs
+│   │   │   ├── Channel
+│   │   │   │   ├── DiscordChannel.cs
+│   │   │   │   ├── DiscordDmChannel.cs
+│   │   │   │   ├── DiscordFollowedChannel.cs
+│   │   │   │   ├── DiscordReadState.cs
+│   │   │   │   ├── Message
+│   │   │   │   │   ├── DiscordAttachment.cs
+│   │   │   │   │   ├── DiscordMentions.cs
+│   │   │   │   │   ├── DiscordMessageActivity.cs
+│   │   │   │   │   ├── DiscordMessageApplication.cs
+│   │   │   │   │   ├── DiscordMessageBuilder.cs
+│   │   │   │   │   ├── DiscordMessage.cs
+│   │   │   │   │   ├── DiscordMessageFile.cs
+│   │   │   │   │   ├── DiscordMessageInteraction.cs
+│   │   │   │   │   ├── DiscordMessageReference.cs
+│   │   │   │   │   ├── DiscordMessageSticker.cs
+│   │   │   │   │   ├── DiscordMessageStickerPack.cs
+│   │   │   │   │   ├── DiscordReaction.cs
+│   │   │   │   │   ├── Embed
+│   │   │   │   │   │   ├── DiscordEmbedAuthor.cs
+│   │   │   │   │   │   ├── DiscordEmbedBuilder.cs
+│   │   │   │   │   │   ├── DiscordEmbed.cs
+│   │   │   │   │   │   ├── DiscordEmbedField.cs
+│   │   │   │   │   │   ├── DiscordEmbedFooter.cs
+│   │   │   │   │   │   ├── DiscordEmbedImage.cs
+│   │   │   │   │   │   ├── DiscordEmbedProvider.cs
+│   │   │   │   │   │   ├── DiscordEmbedThumbnail.cs
+│   │   │   │   │   │   └── DiscordEmbedVideo.cs
+│   │   │   │   │   └── Mentions.cs
+│   │   │   │   ├── Overwrite
+│   │   │   │   │   ├── DiscordOverwriteBuilder.cs
+│   │   │   │   │   └── DiscordOverwrite.cs
+│   │   │   │   ├── Stage
+│   │   │   │   │   └── DiscordStageInstance.cs
+│   │   │   │   └── Thread
+│   │   │   │       ├── DiscordThreadChannel.cs
+│   │   │   │       ├── DiscordThreadChannelMember.cs
+│   │   │   │       ├── DiscordThreadChannelMetadata.cs
+│   │   │   │       ├── Forum
+│   │   │   │       │   ├── DefaultReaction.cs
+│   │   │   │       │   ├── DiscordForumChannel.cs
+│   │   │   │       │   ├── DiscordForumData.cs
+│   │   │   │       │   ├── DiscordForumPostStarter.cs
+│   │   │   │       │   ├── DiscordForumTag.cs
+│   │   │   │       │   └── ForumPostBuilder.cs
+│   │   │   │       └── ThreadQueryResult.cs
+│   │   │   ├── Color
+│   │   │   │   ├── DiscordColor.Colors.cs
+│   │   │   │   └── DiscordColor.cs
+│   │   │   ├── DiscordAuditLogObjects.cs
+│   │   │   ├── DiscordCaptchaRequest.cs
+│   │   │   ├── DiscordConnection.cs
+│   │   │   ├── DiscordSearchResult.cs
+│   │   │   ├── DiscordTeam.cs
+│   │   │   ├── DiscordUri.cs
+│   │   │   ├── Emoji
+│   │   │   │   ├── DiscordEmoji.cs
+│   │   │   │   └── DiscordEmoji.EmojiUtils.cs
+│   │   │   ├── Guild
+│   │   │   │   ├── DiscordBan.cs
+│   │   │   │   ├── DiscordGuild.cs
+│   │   │   │   ├── DiscordGuildEmbed.cs
+│   │   │   │   ├── DiscordGuildEmoji.cs
+│   │   │   │   ├── DiscordGuildMembershipScreening.cs
+│   │   │   │   ├── DiscordGuildMembershipScreeningField.cs
+│   │   │   │   ├── DiscordGuildPreview.cs
+│   │   │   │   ├── DiscordGuildTemplate.cs
+│   │   │   │   ├── DiscordGuildWelcomeScreenChannel.cs
+│   │   │   │   ├── DiscordGuildWelcomeScreen.cs
+│   │   │   │   ├── DiscordMember.cs
+│   │   │   │   ├── DiscordRole.cs
+│   │   │   │   ├── DiscordRoleTags.cs
+│   │   │   │   ├── ScheduledEvents
+│   │   │   │   │   ├── DiscordScheduledGuildEvent.cs
+│   │   │   │   │   ├── DiscordScheduledGuildEventMetadata.cs
+│   │   │   │   │   ├── ScheduledGuildEventPrivacyLevel.cs
+│   │   │   │   │   ├── ScheduledGuildEventStatus.cs
+│   │   │   │   │   └── ScheduledGuildEventType.cs
+│   │   │   │   └── Widget
+│   │   │   │       ├── DiscordWidget.cs
+│   │   │   │       ├── DiscordWidgetMember.cs
+│   │   │   │       └── DiscordWidgetSettings.cs
+│   │   │   ├── Integration
+│   │   │   │   ├── DiscordIntegrationAccount.cs
+│   │   │   │   └── DiscordIntegration.cs
+│   │   │   ├── Interaction
+│   │   │   │   ├── Application
+│   │   │   │   │   ├── DiscordApplicationCommand.cs
+│   │   │   │   │   ├── DiscordApplicationCommandOptionChoice.cs
+│   │   │   │   │   ├── DiscordApplicationCommandOption.cs
+│   │   │   │   │   └── DiscordAutoCompleteChoice.cs
+│   │   │   │   ├── Components
+│   │   │   │   │   ├── DiscordActionRowComponent.cs
+│   │   │   │   │   ├── DiscordButtonComponent.cs
+│   │   │   │   │   ├── DiscordComponent.cs
+│   │   │   │   │   ├── DiscordEmojiComponent.cs
+│   │   │   │   │   ├── DiscordLinkButtonComponent.cs
+│   │   │   │   │   ├── Selects
+│   │   │   │   │   │   ├── BaseDiscordSelectComponent.cs
+│   │   │   │   │   │   ├── DiscordChannelSelectComponent.cs
+│   │   │   │   │   │   ├── DiscordMentionableSelectComponent.cs
+│   │   │   │   │   │   ├── DiscordRoleSelectComponent.cs
+│   │   │   │   │   │   ├── DiscordSelectComponent.cs
+│   │   │   │   │   │   ├── DiscordSelectComponentOption.cs
+│   │   │   │   │   │   └── DiscordUserSelectComponent.cs
+│   │   │   │   │   └── TextInputComponent.cs
+│   │   │   │   ├── DiscordFollowupMessageBuilder.cs
+│   │   │   │   ├── DiscordInteractionApplicationCommandCallbackData.cs
+│   │   │   │   ├── DiscordInteraction.cs
+│   │   │   │   ├── DiscordInteractionData.cs
+│   │   │   │   ├── DiscordInteractionDataOption.cs
+│   │   │   │   ├── DiscordInteractionResolvedCollection.cs
+│   │   │   │   ├── DiscordInteractionResponseBuilder.cs
+│   │   │   │   └── Permissions
+│   │   │   │       ├── DiscordApplicationCommandPermission.cs
+│   │   │   │       └── DiscordGuildApplicationCommandPermissions.cs
+│   │   │   ├── Invite
+│   │   │   │   ├── DiscordInviteChannel.cs
+│   │   │   │   ├── DiscordInvite.cs
+│   │   │   │   ├── DiscordInviteGuild.cs
+│   │   │   │   └── DiscordStageInvite.cs
+│   │   │   ├── Optional.cs
+│   │   │   ├── Relationship
+│   │   │   │   └── DiscordRelationship.cs
+│   │   │   ├── SnowflakeObject.cs
+│   │   │   ├── User
+│   │   │   │   ├── DiscordActivity.cs
+│   │   │   │   ├── DiscordGuildFolder.cs
+│   │   │   │   ├── DiscordMuteConfig.cs
+│   │   │   │   ├── DiscordPresence.cs
+│   │   │   │   ├── DiscordProfile.cs
+│   │   │   │   ├── DiscordUserChannelSettings.cs
+│   │   │   │   ├── DiscordUser.cs
+│   │   │   │   ├── DiscordUserGuildSettings.cs
+│   │   │   │   └── DiscordUserSettings.cs
+│   │   │   ├── Voice
+│   │   │   │   ├── DiscordVoiceRegion.cs
+│   │   │   │   └── DiscordVoiceState.cs
+│   │   │   └── Webhook
+│   │   │       ├── DiscordWebhookBuilder.cs
+│   │   │       └── DiscordWebhook.cs
+│   │   ├── Enums
+│   │   │   ├── ApplicationFlags.cs
+│   │   │   ├── ApplicationUpdateType.cs
+│   │   │   ├── Channel
+│   │   │   │   ├── AutoArchiveDuration.cs
+│   │   │   │   ├── ChannelType.cs
+│   │   │   │   ├── Forum
+│   │   │   │   │   ├── ChannelFlags.cs
+│   │   │   │   │   ├── DefaultForumLayout.cs
+│   │   │   │   │   └── DefaultSortOrder.cs
+│   │   │   │   ├── OverwriteType.cs
+│   │   │   │   ├── Stage
+│   │   │   │   │   └── PrivacyLevel.cs
+│   │   │   │   ├── SystemChannelFlags.cs
+│   │   │   │   └── VideoQualityMode.cs
+│   │   │   ├── ClientCapability.cs
+│   │   │   ├── DiscordSearchFlags.cs
+│   │   │   ├── GatewayCompressionLevel.cs
+│   │   │   ├── Guild
+│   │   │   │   ├── MembershipScreeningFieldType.cs
+│   │   │   │   ├── NsfwLevel.cs
+│   │   │   │   └── PremiumTier.cs
+│   │   │   ├── Interaction
+│   │   │   │   ├── ApplicationCommandOptionType.cs
+│   │   │   │   ├── ApplicationCommandPermissionType.cs
+│   │   │   │   ├── ApplicationCommandType.cs
+│   │   │   │   ├── ButtonStyle.cs
+│   │   │   │   ├── ComponentType.cs
+│   │   │   │   ├── InteractionResponseType.cs
+│   │   │   │   ├── InteractionType.cs
+│   │   │   │   └── TextInputStyle.cs
+│   │   │   ├── Message
+│   │   │   │   ├── MentionType.cs
+│   │   │   │   ├── MessageActivityType.cs
+│   │   │   │   ├── MessageFlags.cs
+│   │   │   │   └── MessageType.cs
+│   │   │   ├── Permission.cs
+│   │   │   ├── Relationship
+│   │   │   │   └── DiscordRelationshipType.cs
+│   │   │   ├── TimestampFormat.cs
+│   │   │   ├── TokenType.cs
+│   │   │   └── User
+│   │   │       ├── DiscordMessageNotifications.cs
+│   │   │       ├── InviteTargetType.cs
+│   │   │       ├── PremiumType.cs
+│   │   │       ├── TargetUserType.cs
+│   │   │       └── UserFlags.cs
+│   │   ├── EventArgs
+│   │   │   ├── ApplicationCommandEventArgs.cs
+│   │   │   ├── ApplicationCommandPermissionsUpdatedEventArgs.cs
+│   │   │   ├── AuthTokenUpdatedEventArgs.cs
+│   │   │   ├── CaptchaRequestEventArgs.cs
+│   │   │   ├── Channel
+│   │   │   │   ├── ChannelCreateEventArgs.cs
+│   │   │   │   ├── ChannelDeleteEventArgs.cs
+│   │   │   │   ├── ChannelPinsUpdateEventArgs.cs
+│   │   │   │   ├── ChannelRecipientAddedEventArgs.cs
+│   │   │   │   ├── ChannelRecipientRemovedEventArgs.cs
+│   │   │   │   ├── ChannelUnreadUpdateEventArgs.cs
+│   │   │   │   ├── ChannelUpdateEventArgs.cs
+│   │   │   │   ├── DmChannelCreateEventArgs.cs
+│   │   │   │   ├── DMChannelDeleteEventArgs.cs
+│   │   │   │   ├── ReadStateUpdateEventArgs.cs
+│   │   │   │   └── Thread
+│   │   │   │       ├── ThreadCreateEventArgs.cs
+│   │   │   │       ├── ThreadDeleteEventArgs.cs
+│   │   │   │       ├── ThreadListSyncEventArgs.cs
+│   │   │   │       ├── ThreadMembersUpdateEventArgs.cs
+│   │   │   │       ├── ThreadMemberUpdateEventArgs.cs
+│   │   │   │       └── ThreadUpdateEventArgs.cs
+│   │   │   ├── ClientErrorEventArgs.cs
+│   │   │   ├── DiscordEventArgs.cs
+│   │   │   ├── Guild
+│   │   │   │   ├── Ban
+│   │   │   │   │   ├── GuildBanAddEventArgs.cs
+│   │   │   │   │   └── GuildBanRemoveEventArgs.cs
+│   │   │   │   ├── GuildCreateEventArgs.cs
+│   │   │   │   ├── GuildDeleteEventArgs.cs
+│   │   │   │   ├── GuildDownloadCompletedEventArgs.cs
+│   │   │   │   ├── GuildEmojisUpdateEventArgs.cs
+│   │   │   │   ├── GuildIntegrationsUpdateEventArgs.cs
+│   │   │   │   ├── GuildStickersUpdateEventArgs.cs
+│   │   │   │   ├── GuildUpdateEventArgs.cs
+│   │   │   │   ├── Member
+│   │   │   │   │   ├── GuildMemberAddEventArgs.cs
+│   │   │   │   │   ├── GuildMemberRemoveEventArgs.cs
+│   │   │   │   │   ├── GuildMembersChunkEventArgs.cs
+│   │   │   │   │   └── GuildMemberUpdateEventArgs.cs
+│   │   │   │   ├── Role
+│   │   │   │   │   ├── GuildRoleCreateEventArgs.cs
+│   │   │   │   │   ├── GuildRoleDeleteEventArgs.cs
+│   │   │   │   │   └── GuildRoleUpdateEventArgs.cs
+│   │   │   │   └── ScheduledEvents
+│   │   │   │       ├── ScheduledGuildEventCompletedEventArgs.cs
+│   │   │   │       ├── ScheduledGuildEventCreateEventArgs.cs
+│   │   │   │       ├── ScheduledGuildEventDeleteEventArgs.cs
+│   │   │   │       ├── ScheduledGuildEventUpdateEventArgs.cs
+│   │   │   │       ├── ScheduledGuildEventUserAddEventArgs.cs
+│   │   │   │       └── ScheduledGuildEventUserRemoveEventArgs.cs
+│   │   │   ├── HeartBeatEventArgs.cs
+│   │   │   ├── Integration
+│   │   │   │   ├── IntegrationCreateEventArgs.cs
+│   │   │   │   ├── IntegrationDeleteEventArgs.cs
+│   │   │   │   └── IntegrationUpdateEventArgs.cs
+│   │   │   ├── Interaction
+│   │   │   │   ├── ComponentInteractionCreateEventArgs.cs
+│   │   │   │   ├── ContextMenuInteractionCreateEventArgs.cs
+│   │   │   │   ├── InteractionCreateEventArgs.cs
+│   │   │   │   └── ModalSubmitEventArgs.cs
+│   │   │   ├── Invite
+│   │   │   │   ├── InviteCreateEventArgs.cs
+│   │   │   │   └── InviteDeleteEventArgs.cs
+│   │   │   ├── LoggedOutEventArgs.cs
+│   │   │   ├── Message
+│   │   │   │   ├── MessageAcknowledgeEventArgs.cs
+│   │   │   │   ├── MessageBulkDeleteEventArgs.cs
+│   │   │   │   ├── MessageCreateEventArgs.cs
+│   │   │   │   ├── MessageDeleteEventArgs.cs
+│   │   │   │   ├── MessageUpdateEventArgs.cs
+│   │   │   │   └── Reaction
+│   │   │   │       ├── MessageReactionAddEventArgs.cs
+│   │   │   │       ├── MessageReactionRemoveEmojiEventArgs.cs
+│   │   │   │       ├── MessageReactionRemoveEventArgs.cs
+│   │   │   │       └── MessageReactionsClearEventArgs.cs
+│   │   │   ├── ReadyEventArgs.cs
+│   │   │   ├── Relationship
+│   │   │   │   ├── RelationshipAddEventArgs.cs
+│   │   │   │   └── RelationshipRemoveEventArgs.cs
+│   │   │   ├── ResumedEventArgs.cs
+│   │   │   ├── Socket
+│   │   │   │   ├── SocketDisconnectEventArgs.cs
+│   │   │   │   ├── SocketEventArgs.cs
+│   │   │   │   └── WebSocketMessageEventArgs.cs
+│   │   │   ├── Stage Instance
+│   │   │   │   ├── StageInstanceCreateEventArgs.cs
+│   │   │   │   ├── StageInstanceDeleteEventArgs.cs
+│   │   │   │   └── StageInstanceUpdateEventArgs.cs
+│   │   │   ├── TypingStartEventArgs.cs
+│   │   │   ├── UnknownEventArgs.cs
+│   │   │   ├── User
+│   │   │   │   ├── PresenceUpdateEventArgs.cs
+│   │   │   │   ├── UserSettingsProtoUpdateEventArgs.cs
+│   │   │   │   ├── UserSettingsUpdateEventArgs.cs
+│   │   │   │   ├── UserSpeakingEventArgs.cs
+│   │   │   │   └── UserUpdateEventArgs.cs
+│   │   │   ├── Voice
+│   │   │   │   ├── VoiceServerUpdateEventArgs.cs
+│   │   │   │   └── VoiceStateUpdateEventArgs.cs
+│   │   │   ├── WebhooksUpdateEventArgs.cs
+│   │   │   └── ZombiedEventArgs.cs
+│   │   ├── Exceptions
+│   │   │   ├── BadRequestException.cs
+│   │   │   ├── DiscordException.cs
+│   │   │   ├── NotFoundException.cs
+│   │   │   ├── RateLimitException.cs
+│   │   │   ├── RequestSizeException.cs
+│   │   │   ├── ServerErrorException.cs
+│   │   │   └── UnauthorizedException.cs
+│   │   ├── Formatter.cs
+│   │   ├── ImageTool.cs
+│   │   ├── Logging
+│   │   │   ├── CompositeDefaultLogger.cs
+│   │   │   ├── DefaultLogger.cs
+│   │   │   ├── DefaultLoggerFactory.cs
+│   │   │   ├── DefaultLoggerProvider.cs
+│   │   │   ├── LoggerEvents.cs
+│   │   │   └── ShardedLoggerFactory.cs
+│   │   ├── Net
+│   │   │   ├── Abstractions
+│   │   │   │   ├── AuditLogAbstractions.cs
+│   │   │   │   ├── ClientProperties.cs
+│   │   │   │   ├── FollowedChannelAddPayload.cs
+│   │   │   │   ├── Gateway
+│   │   │   │   │   ├── GatewayHello.cs
+│   │   │   │   │   ├── GatewayIdentifyResume.cs
+│   │   │   │   │   ├── GatewayInfo.cs
+│   │   │   │   │   ├── GatewayOpCode.cs
+│   │   │   │   │   ├── GatewayPayload.cs
+│   │   │   │   │   └── GatewayRequestGuildMembers.cs
+│   │   │   │   ├── IOAuth2Payload.cs
+│   │   │   │   ├── ReadyPayload.cs
+│   │   │   │   ├── Rest
+│   │   │   │   │   ├── RestApplicationCommandPayloads.cs
+│   │   │   │   │   ├── RestChannelPayloads.cs
+│   │   │   │   │   ├── RestGuildPayloads.cs
+│   │   │   │   │   ├── RestStickerPayloads.cs
+│   │   │   │   │   ├── RestThreadPayloads.cs
+│   │   │   │   │   ├── RestUserPayloads.cs
+│   │   │   │   │   └── RestWebhookPayloads.cs
+│   │   │   │   ├── ShardInfo.cs
+│   │   │   │   ├── StatusUpdate.cs
+│   │   │   │   ├── Transport
+│   │   │   │   │   ├── TransportActivity.cs
+│   │   │   │   │   ├── TransportApplication.cs
+│   │   │   │   │   ├── TransportMember.cs
+│   │   │   │   │   ├── TransportProfile.cs
+│   │   │   │   │   ├── TransportTeam.cs
+│   │   │   │   │   ├── TransportUser.cs
+│   │   │   │   │   └── TransportUserProfile.cs
+│   │   │   │   └── VoiceStateUpdate.cs
+│   │   │   ├── ConnectionEndpoint.cs
+│   │   │   ├── Models
+│   │   │   │   ├── ApplicationCommandEditModel.cs
+│   │   │   │   ├── BaseEditModel.cs
+│   │   │   │   ├── ChannelEditModel.cs
+│   │   │   │   ├── GuildEditModel.cs
+│   │   │   │   ├── MemberEditModel.cs
+│   │   │   │   ├── MembershipScreeningEditModel.cs
+│   │   │   │   ├── RoleEditModel.cs
+│   │   │   │   ├── ScheduledGuildEventEditModel.cs
+│   │   │   │   ├── StageInstanceEditModel.cs
+│   │   │   │   ├── StickerEditModel.cs
+│   │   │   │   ├── ThreadChannelEditModel.cs
+│   │   │   │   └── WelcomeScreenEditModel.cs
+│   │   │   ├── Rest
+│   │   │   │   ├── BaseRestRequest.cs
+│   │   │   │   ├── DiscordApiClient.cs
+│   │   │   │   ├── Endpoints.cs
+│   │   │   │   ├── IpEndpoint.cs
+│   │   │   │   ├── MultipartWebRequest.cs
+│   │   │   │   ├── RateLimitBucket.cs
+│   │   │   │   ├── RestClient.cs
+│   │   │   │   ├── RestRequest.cs
+│   │   │   │   ├── RestRequestMethod.cs
+│   │   │   │   ├── RestResponse.cs
+│   │   │   │   ├── RestUserProfileUpdatePayload.cs
+│   │   │   │   ├── RestUserSettingsProtoUpdatePayload.cs
+│   │   │   │   └── SessionBucket.cs
+│   │   │   ├── Serialization
+│   │   │   │   ├── DiscordComponentJsonConverter.cs
+│   │   │   │   ├── DiscordForumChannelJsonConverter.cs
+│   │   │   │   ├── DiscordJson.cs
+│   │   │   │   ├── DiscordPermissionsJsonConverter.cs
+│   │   │   │   ├── GatewayPayloadJsonConverter.cs
+│   │   │   │   ├── ISO8601DateTimeOffsetJsonConverter.cs
+│   │   │   │   └── SnowflakeArrayAsDictionaryJsonConverter.cs
+│   │   │   ├── Udp
+│   │   │   │   ├── BaseUdpClient.cs
+│   │   │   │   └── DspUdpClient.cs
+│   │   │   └── WebSocket
+│   │   │       ├── IWebSocketClient.cs
+│   │   │       ├── PayloadDecompressor.cs
+│   │   │       ├── SocketLock.cs
+│   │   │       └── WebSocketClient.cs
+│   │   ├── obj
+│   │   │   ├── Debug
+│   │   │   │   └── netstandard2.0
+│   │   │   │       ├── DSharpPlus.AssemblyInfo.cs
+│   │   │   │       ├── DSharpPlus.AssemblyInfoInputs.cache
+│   │   │   │       ├── DSharpPlus.assets.cache
+│   │   │   │       ├── DSharpPlus.csproj.AssemblyReference.cache
+│   │   │   │       ├── DSharpPlus.csproj.CoreCompileInputs.cache
+│   │   │   │       ├── DSharpPlus.csproj.FileListAbsolute.txt
+│   │   │   │       ├── DSharpPlus.dll
+│   │   │   │       ├── DSharpPlus.GeneratedMSBuildEditorConfig.editorconfig
+│   │   │   │       ├── DSharpPlus.pdb
+│   │   │   │       ├── DSharpPlus.sourcelink.json
+│   │   │   │       └── DSharpPlus.xml
+│   │   │   ├── DSharpPlus.csproj.nuget.dgspec.json
+│   │   │   ├── DSharpPlus.csproj.nuget.g.props
+│   │   │   ├── DSharpPlus.csproj.nuget.g.targets
+│   │   │   ├── project.assets.json
+│   │   │   ├── project.nuget.cache
+│   │   │   └── Release
+│   │   │       └── netstandard2.0
+│   │   │           ├── DSharpPlus.AssemblyInfo.cs
+│   │   │           ├── DSharpPlus.AssemblyInfoInputs.cache
+│   │   │           ├── DSharpPlus.assets.cache
+│   │   │           ├── DSharpPlus.csproj.AssemblyReference.cache
+│   │   │           ├── DSharpPlus.csproj.CoreCompileInputs.cache
+│   │   │           ├── DSharpPlus.csproj.FileListAbsolute.txt
+│   │   │           ├── DSharpPlus.dll
+│   │   │           ├── DSharpPlus.GeneratedMSBuildEditorConfig.editorconfig
+│   │   │           ├── DSharpPlus.pdb
+│   │   │           ├── DSharpPlus.sourcelink.json
+│   │   │           └── DSharpPlus.xml
+│   │   ├── Properties
+│   │   │   └── AssemblyProperties.cs
+│   │   ├── QueryUriBuilder.cs
+│   │   ├── ReadOnlyConcurrentDictionary.cs
+│   │   ├── ReadOnlySet.cs
+│   │   ├── RingBuffer.cs
+│   │   └── Utilities.cs
+│   ├── DSharpPlus.CommandsNext
+│   │   ├── Attributes
+│   │   │   ├── AliasesAttribute.cs
+│   │   │   ├── CategoryAttribute.cs
+│   │   │   ├── CheckBaseAttribute.cs
+│   │   │   ├── CommandAttribute.cs
+│   │   │   ├── CooldownAttribute.cs
+│   │   │   ├── DescriptionAttribute.cs
+│   │   │   ├── DontInjectAttribute.cs
+│   │   │   ├── GroupAttribute.cs
+│   │   │   ├── HiddenAttribute.cs
+│   │   │   ├── ModuleLifespanAttribute.cs
+│   │   │   ├── PriorityAttribute.cs
+│   │   │   ├── RemainingTextAttribute.cs
+│   │   │   ├── RequireBotPermissionsAttribute.cs
+│   │   │   ├── RequireDirectMessageAttribute.cs
+│   │   │   ├── RequireGuildAttribute.cs
+│   │   │   ├── RequireNsfwAttribute.cs
+│   │   │   ├── RequireOwnerAttribute.cs
+│   │   │   ├── RequirePermissionsAttribute.cs
+│   │   │   ├── RequirePrefixesAttribute.cs
+│   │   │   ├── RequireReferencedMessageAttribute.cs
+│   │   │   ├── RequireRolesAttribute.cs
+│   │   │   └── RequireUserPermissionsAttribute.cs
+│   │   ├── BaseCommandModule.cs
+│   │   ├── CommandsNextConfiguration.cs
+│   │   ├── CommandsNextEvents.cs
+│   │   ├── CommandsNextExtension.cs
+│   │   ├── CommandsNextUtilities.cs
+│   │   ├── Converters
+│   │   │   ├── ArgumentBindingResult.cs
+│   │   │   ├── BaseHelpFormatter.cs
+│   │   │   ├── DefaultHelpFormatter.cs
+│   │   │   ├── EntityConverters.cs
+│   │   │   ├── EnumConverter.cs
+│   │   │   ├── HelpFormatterFactory.cs
+│   │   │   ├── IArgumentConverter.cs
+│   │   │   ├── NullableConverter.cs
+│   │   │   ├── NumericConverters.cs
+│   │   │   ├── StringConverter.cs
+│   │   │   └── TimeConverters.cs
+│   │   ├── DSharpPlus.CommandsNext.csproj
+│   │   ├── Entities
+│   │   │   ├── Builders
+│   │   │   │   ├── CommandBuilder.cs
+│   │   │   │   ├── CommandGroupBuilder.cs
+│   │   │   │   ├── CommandModuleBuilder.cs
+│   │   │   │   └── CommandOverloadBuilder.cs
+│   │   │   ├── CommandArgument.cs
+│   │   │   ├── Command.cs
+│   │   │   ├── CommandGroup.cs
+│   │   │   ├── CommandHelpMessage.cs
+│   │   │   ├── CommandModule.cs
+│   │   │   ├── CommandOverload.cs
+│   │   │   └── CommandResult.cs
+│   │   ├── EventArgs
+│   │   │   ├── CommandContext.cs
+│   │   │   ├── CommandErrorEventArgs.cs
+│   │   │   ├── CommandEventArgs.cs
+│   │   │   └── CommandExecutionEventArgs.cs
+│   │   ├── Exceptions
+│   │   │   ├── ChecksFailedException.cs
+│   │   │   ├── CommandNotFoundException.cs
+│   │   │   ├── DuplicateCommandException.cs
+│   │   │   ├── DuplicateOverloadException.cs
+│   │   │   └── InvalidOverloadException.cs
+│   │   ├── Executors
+│   │   │   ├── AsynchronousCommandExecutor.cs
+│   │   │   ├── ICommandExecutor.cs
+│   │   │   ├── ParallelQueuedCommandExecutor.cs
+│   │   │   └── SynchronousCommandExecutor.cs
+│   │   └── ExtensionMethods.cs
+│   ├── DSharpPlus.Interactivity
+│   │   ├── DSharpPlus.Interactivity.csproj
+│   │   ├── Enums
+│   │   │   ├── ButtonDisableBehavior.cs
+│   │   │   ├── ButtonPaginationBehavior.cs
+│   │   │   ├── InteractionResponseBehavior.cs
+│   │   │   ├── PaginationBehaviour.cs
+│   │   │   ├── PaginationButtonType.cs
+│   │   │   ├── PaginationDeletion.cs
+│   │   │   ├── PollBehaviour.cs
+│   │   │   └── SplitType.cs
+│   │   ├── EventHandling
+│   │   │   ├── ComponentBased
+│   │   │   │   ├── ComponentEventWaiter.cs
+│   │   │   │   ├── ComponentPaginator.cs
+│   │   │   │   ├── PaginationButtons.cs
+│   │   │   │   └── Requests
+│   │   │   │       ├── ButtonPaginationRequest.cs
+│   │   │   │       ├── ComponentCollectRequest.cs
+│   │   │   │       ├── ComponentMatchRequest.cs
+│   │   │   │       └── InteractionPaginationRequest.cs
+│   │   │   ├── EventWaiter.cs
+│   │   │   ├── IPaginator.cs
+│   │   │   ├── ModalEventWaiter.cs
+│   │   │   ├── Paginator.cs
+│   │   │   ├── Poller.cs
+│   │   │   ├── ReactionCollector.cs
+│   │   │   └── Requests
+│   │   │       ├── CollectRequest.cs
+│   │   │       ├── IPaginationRequest.cs
+│   │   │       ├── MatchRequest.cs
+│   │   │       ├── ModalMatchRequest.cs
+│   │   │       ├── PaginationRequest.cs
+│   │   │       └── PollRequest.cs
+│   │   ├── Extensions
+│   │   │   ├── ChannelExtensions.cs
+│   │   │   ├── ClientExtensions.cs
+│   │   │   ├── InteractionExtensions.cs
+│   │   │   └── MessageExtensions.cs
+│   │   ├── InteractivityConfiguration.cs
+│   │   ├── InteractivityEvents.cs
+│   │   ├── InteractivityExtension.cs
+│   │   └── InteractivityResult.cs
+│   ├── DSharpPlus.Lavalink
+│   │   ├── DiscordClientExtensions.cs
+│   │   ├── DSharpPlus.Lavalink.csproj
+│   │   ├── Entities
+│   │   │   ├── LavalinkCommands.cs
+│   │   │   ├── LavalinkDispatch.cs
+│   │   │   ├── LavalinkEqualizerTypes.cs
+│   │   │   ├── LavalinkPayload.cs
+│   │   │   ├── LavalinkRouteStatus.cs
+│   │   │   ├── LavalinkUpdates.cs
+│   │   │   ├── LavalinkVoiceServerUpdate.cs
+│   │   │   └── LavalinkVoiceStateUpdatePayload.cs
+│   │   ├── Enums
+│   │   │   ├── LavalinkRoutePlannerType.cs
+│   │   │   └── LavalinkSearchType.cs
+│   │   ├── EventArgs
+│   │   │   ├── GuildConnectionCreatedEventArgs - Copy.cs
+│   │   │   ├── GuildConnectionRemovedEventArgs.cs
+│   │   │   ├── NodeDisconnectedEventArgs.cs
+│   │   │   ├── PlayerUpdateEventArgs.cs
+│   │   │   ├── StatisticsReceivedEventArgs.cs
+│   │   │   ├── TrackEventArgs.cs
+│   │   │   └── WebSocketCloseEventArgs.cs
+│   │   ├── LavalinkConfiguration.cs
+│   │   ├── LavalinkEvents.cs
+│   │   ├── LavalinkExtension.cs
+│   │   ├── LavalinkGuildConnection.cs
+│   │   ├── LavalinkNodeConnection.cs
+│   │   ├── LavalinkRestClient.cs
+│   │   ├── LavalinkRestEndpoints.cs
+│   │   ├── LavalinkTrack.cs
+│   │   └── LavalinkUtil.cs
+│   ├── DSharpPlus.Rest
+│   │   ├── DiscordRestClient.cs
+│   │   └── DSharpPlus.Rest.csproj
+│   ├── DSharpPlus.SlashCommands
+│   │   ├── ApplicationCommandModule.cs
+│   │   ├── Attributes
+│   │   │   ├── AutocompleteAttribute.cs
+│   │   │   ├── ChannelTypesAttribute.cs
+│   │   │   ├── ChoiceAttribute.cs
+│   │   │   ├── ChoiceNameAttribute.cs
+│   │   │   ├── ChoiceProviderAttribute.cs
+│   │   │   ├── ContextMenuAttribute.cs
+│   │   │   ├── DescriptionLocalizationAttribute.cs
+│   │   │   ├── DontInjectAttribute.cs
+│   │   │   ├── GuildOnlyAttribute.cs
+│   │   │   ├── MaximumAttribute.cs
+│   │   │   ├── MaximumLengthAttribute.cs
+│   │   │   ├── MinimumAttribute.cs
+│   │   │   ├── MinimumLengthAttribute.cs
+│   │   │   ├── NameLocalizationAttribute.cs
+│   │   │   ├── OptionAttribute.cs
+│   │   │   ├── SlashCommandAttribute.cs
+│   │   │   ├── SlashCommandGroupAttribute.cs
+│   │   │   ├── SlashCommandPermissionsAttribute.cs
+│   │   │   └── SlashModuleLifespanAttribute.cs
+│   │   ├── Built-in Checks
+│   │   │   ├── ContextMenuCheckBaseAttribute.cs
+│   │   │   ├── SlashCheckBaseAttribute.cs
+│   │   │   ├── SlashCooldownAttribute.cs
+│   │   │   ├── SlashRequireBotPermissionsAttribute.cs
+│   │   │   ├── SlashRequireDirectMessageAttribute.cs
+│   │   │   ├── SlashRequireGuildAttribute.cs
+│   │   │   ├── SlashRequireOwnerAttribute.cs
+│   │   │   ├── SlashRequirePermissionsAttribute.cs
+│   │   │   └── SlashRequireUserPermissionsAttribute.cs
+│   │   ├── ChoiceProvider.cs
+│   │   ├── ContextMenuExecutionChecksFailedException.cs
+│   │   ├── Contexts
+│   │   │   ├── AutocompleteContext.cs
+│   │   │   ├── BaseContext.cs
+│   │   │   ├── ContextMenuContext.cs
+│   │   │   └── InteractionContext.cs
+│   │   ├── DSharpPlus.SlashCommands.csproj
+│   │   ├── EventArgs
+│   │   │   ├── AutocompleteErrorEventArgs.cs
+│   │   │   ├── AutocompleteExecutedEventArgs.cs
+│   │   │   ├── ContextMenuErrorEventArgs.cs
+│   │   │   ├── ContextMenuExecutedEventArgs.cs
+│   │   │   ├── ContextMenuInvokedEventArgs.cs
+│   │   │   ├── SlashCommandErrorEventArgs.cs
+│   │   │   ├── SlashCommandExecutedEventArgs.cs
+│   │   │   └── SlashCommandInvokedEventArgs.cs
+│   │   ├── ExtensionMethods.cs
+│   │   ├── IAutocompleteProvider.cs
+│   │   ├── IChoiceProvider.cs
+│   │   ├── LICENSE
+│   │   ├── Localization.cs
+│   │   ├── SlashCommandConfiguration.cs
+│   │   ├── SlashCommandsExtension.cs
+│   │   └── SlashExecutionChecksFailedException.cs
+│   ├── DSharpPlus.sln
+│   ├── DSharpPlus.targets
+│   ├── DSharpPlus.Test
+│   │   ├── ADumbFile.txt
+│   │   ├── AvatarCommands.cs
+│   │   ├── BeeMovie.cs
+│   │   ├── Buttons.cs
+│   │   ├── ColorizeTest.cs
+│   │   ├── DMTest.cs
+│   │   ├── DSharpPlus.Test.csproj
+│   │   ├── ForumTest.cs
+│   │   ├── GuildEventTest.cs
+│   │   ├── InteractivityTest.cs
+│   │   ├── MentionValidation.cs
+│   │   ├── ModalCommand.cs
+│   │   ├── MultiEmbedTest.cs
+│   │   ├── PaginationTest.cs
+│   │   ├── PermissionInheritanceCommands.cs
+│   │   ├── Program.cs
+│   │   ├── Reply.cs
+│   │   ├── Role-IconTest.cs
+│   │   ├── RoleMenuCommand.cs
+│   │   ├── SelectTests.cs
+│   │   ├── SlashCommandMinMaxLengthTest.cs
+│   │   ├── SlashCommandMinMaxTest.cs
+│   │   ├── SlashCommandPermissionTest.cs
+│   │   ├── SlashCommandsTimeSpanConverterTest.cs
+│   │   ├── SlashLocalizizationTests.cs
+│   │   ├── StickerTestCommands.cs
+│   │   ├── TestBotCommands.cs
+│   │   ├── TestBotConfig.cs
+│   │   ├── TestBot.cs
+│   │   ├── TestBotDynamicCommands.cs
+│   │   ├── TestBotEvalCommands.cs
+│   │   ├── TestBotHelpFormatter.cs
+│   │   ├── TestBotLavaCommands.cs
+│   │   ├── TestBotPaginator.cs
+│   │   ├── TestBotVoiceCommands.cs
+│   │   ├── VoiceNextTest.cs
+│   │   └── VoiceTextTests.cs
+│   ├── DSharpPlus.VoiceNext
+│   │   ├── AudioFormat.cs
+│   │   ├── Codec
+│   │   │   ├── Helpers.cs
+│   │   │   ├── Interop.cs
+│   │   │   ├── Opus.cs
+│   │   │   ├── Rtp.cs
+│   │   │   └── Sodium.cs
+│   │   ├── DiscordClientExtensions.cs
+│   │   ├── DSharpPlus.VoiceNext.csproj
+│   │   ├── Entities
+│   │   │   ├── AudioSender.cs
+│   │   │   ├── VoiceDispatch.cs
+│   │   │   ├── VoiceIdentifyPayload.cs
+│   │   │   ├── VoicePacket.cs
+│   │   │   ├── VoiceReadyPayload.cs
+│   │   │   ├── VoiceSelectProtocolPayload.cs
+│   │   │   ├── VoiceSelectProtocolPayloadData.cs
+│   │   │   ├── VoiceServerUpdatePayload.cs
+│   │   │   ├── VoiceSessionDescriptionPayload.cs
+│   │   │   ├── VoiceSpeakingPayload.cs
+│   │   │   ├── VoiceStateUpdatePayload.cs
+│   │   │   ├── VoiceUserJoinPayload.cs
+│   │   │   └── VoiceUserLeavePayload.cs
+│   │   ├── EventArgs
+│   │   │   ├── VoiceReceiveEventArgs.cs
+│   │   │   ├── VoiceUserJoinEventArgs.cs
+│   │   │   └── VoiceUserLeaveEventArgs.cs
+│   │   ├── IVoiceFilter.cs
+│   │   ├── RawVoicePacket.cs
+│   │   ├── StreamExtensions.cs
+│   │   ├── VoiceApplication.cs
+│   │   ├── VoiceNextConfiguration.cs
+│   │   ├── VoiceNextConnection.cs
+│   │   ├── VoiceNextEvents.cs
+│   │   ├── VoiceNextExtension.cs
+│   │   └── VoiceTransmitSink.cs
+│   ├── DSharpPlus.Windows
+│   │   ├── DiscordChannelExtensions.cs
+│   │   ├── DSharpPlus.Windows.csproj
+│   │   └── Properties
+│   │       ├── AssemblyInfo.cs
+│   │       └── DSharpPlus.Windows.rd.xml
+│   ├── LICENSE
+│   ├── logo
+│   │   ├── d#+.png
+│   │   ├── d#+.psd
+│   │   ├── dsharpplus.png
+│   │   ├── dsharp+.png
+│   │   ├── dsharp+.psd
+│   │   ├── dsharp+_smaller.png
+│   │   ├── d#+_smaller.png
+│   │   ├── ds+.png
+│   │   ├── ds+.psd
+│   │   └── ds+_smaller.png
+│   ├── README.md
+│   └── tools
+│       ├── AutoUpdateChannelDescription
+│       │   ├── DSharpPlus.Tools.AutoUpdateChannelDescription.csproj
+│       │   ├── Program.cs
+│       │   └── README.md
+│       └── Docs
+│           ├── DSharpPlus.Tools.Docs.csproj
+│           ├── Program.cs
+│           └── README.md
+├── Dynamic
+│   ├── news.json
+│   └── notices.json
+├── LICENSE
+├── README.md
+└── tree.txt
+
+243 directories, 2105 files

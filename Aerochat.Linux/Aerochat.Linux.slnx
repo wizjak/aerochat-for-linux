@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../DSP/DSharpPlus/DSharpPlus.csproj" />
+  <Project Path="Aerochat.Linux.csproj" />
+</Solution>

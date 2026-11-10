@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Ads>
+	<Ad Image="Aerochat.png" Url="https://aerochat.live" />
+	<!-- Removed: Defunct project; link is now invalid..
+	<Ad Image="N09.png" Url="https://discord.gg/pU4get53Zp" />
+	-->
+	<Ad Image="DragonBallOnline.png" Url="https://dbokai.net/" />
+	<Ad Image="Liam.png" Url="https://x.com/z2rmc" />
+	<Ad Image="Slobbery.png" Url="https://slobbery.wang" />
+	<Ad Image="CursorInvisible.png" Url="https://dagobah.net/flash/Cursor_Invisible.swf" />
+	<Ad Image="SecretCult.png" Url="https://www.youtube.com/watch?v=QJzt8L_i7_U" />
+	<Ad Image="Photopea.png" Url="https://photopea.com" />
+	<Ad Image="ENA.png" Url="https://joelgc.com" />
+	<Ad Image="PrismLauncher.png" Url="https://prismlauncher.org/" />
+	<Ad Image="RingRacers.png" Url="https://www.kartkrew.org/" />
+	<Ad Image="WiiLink.png" Url="https://www.wiilink24.com/" Submitter="レイーン" />
+	<Ad Image="LibreWolf.png" Url="https://librewolf.net/" />
+	<Ad Image="ZorinOS.png" Url="https://zorin.com/os/" />
+	<Ad Image="Yume2kki.png" Url="https://yume.wiki/2kki/Yume_2kki_Wiki" />
+	<Ad Image="LineageOS.png" Url="https://lineageos.org" />
+	<Ad Image="Aerocat.png" Url="https://www.youtube.com/results?search_query=Cats" />
+	<Ad Image="TheMostAmazingSite.png" Url="http://www.themostamazingwebsiteontheinternet.com/" />
+	<Ad Image="MirandaNG.png" Url="https://miranda-ng.org" />
+	<Ad Image="ErrorOliver.png" Url="https://erroroliver.neocities.org/" Submitter="ErrorOliver" />
+	<Ad Image="VibRibbon.png" Url="https://vibribbon.neocities.org/" />
+	<Ad Image="GameBanana.png" Url="https://gamebanana.com/" />
+	<Ad Image="Blabla.png" Url="https://blablaland.co/" />
+	<Ad Image="OpenJDK.png" Url="https://openjdk.org/" />
+	<Ad Image="NetRestore.png" Url="https://www.tumblr.com/netrestore/" />
+	<Ad Image="Cobalt.png" Url="https://cobalt.tools/" />
+	<Ad Image="Fin.png" Url="https://ftolnks.xyz/" />
+	<Ad Image="LightshowRUSH.png" Url="https://lightshow-rush.neocities.org/" />
+	<Ad Image="DeltarunebyTobyFox.png" Url="https://store.steampowered.com/app/1671210/DELTARUNE/" />
+	<Ad Image="Bookmarks.png" Url="https://codeberg.org/lime360/bookmarks" Submitter="lime360" />
+	<Ad Image="Soulseek.png" Url="https://www.slsknet.org/" />
+	<Ad Image="Explorer7.png" Url="https://winclassic.net/thread/2588/explorer7-windows-explorer-10-11" />
+	<Ad Image="MakeYourOwnAd.png" Url="https://discord.gg/Pn5dD7EyUQ" />
+	<Ad Image="OpenUtau.png" Url="http://www.openutau.com/" />
+	<Ad Image="21H2to7TransformationPack.png" Url="https://www.deviantart.com/imswordqueeen/art/1081353677" Submitter="ImSwordQueen" />
+	<Ad Image="Lucida.png" Url="https://lucida.to/" />
+	<Ad Image="GummibrsOfficialServer.png" Url="https://discord.gg/gummibar" />
+	<Ad Image="Windows93.png" Url="https://www.windows93.net/" />
+	<Ad Image="BetterCallSaul.png" Url="http://www.savewalterwhite.com/" />
+	<Ad Image="Newgrounds.png" Url="https://www.newgrounds.com/" />
+	<Ad Image="WarmRizzlers.png" Url="https://twitter.com/notnullptr" />
+	<Ad Image="TheOldNetImprovedVersion.png" Url="https://theoldnet.com" />
+	<Ad Image="Nitromenewdesign.png" Url="https://www.nitrome.com/" />
+	<Ad Image="Xbox360.png" Url="https://web.archive.org/web/20090601171445/http://www.xbox.com/en-US/" />
+	<Ad Image="Minecraft.png" Url="https://web.archive.org/web/20130404173224/https://www.minecraft.net/" />
+	<Ad Image="Pissandshittium.png" Url="https://pissandshittium.org" />
+	<Ad Image="NintendoDSi.png" Url="https://web.archive.org/web/20090901155053/http://www.nintendodsi.com/" Submitter="レイーン" />
+	<Ad Image="Wii.png" Url="https://web.archive.org/web/20091201030340/http://www.nintendo.com/wii" Submitter="レイーン" />
+	<Ad Image="Sudomemo.png" Url="https://www.sudomemo.net/" Submitter="レイーン" />
+	<Ad Image="Rizzthereadme.png" Url="https://youtube.com/clip/Ugkx_n0scQZGzaV1F_ULluOjjJYRDo7Iw3ly" />
+	<Ad Image="Windows7.png" Url="https://web.archive.org/web/20091210134354/http://www.microsoft.com/windows/default.aspx?icid=winvan" />
+	<!-- This point is as far back as the #voting channel history goes, and is as far back as actual submission records were tracked.-->
+	<Ad Image="AerochatisOpenSource.png" Url="https://github.com/not-nullptr/Aerochat" Submitter="nullptr" />
+	<Ad Image="spacehey.png" Url="https://spacehey.com/" Submitter="patricktbp" />
+	<Ad Image="Bitview.png" Url="https://www.bitview.net/" Submitter="StuxDek" />
+	<Ad Image="NaziZombiesPortable.png" Url="https://nzp.gay" Submitter="Evolta" />
+	<Ad Image="Counter-StrikeSource.png" Url="http://web.archive.org/web/20140826043314/http://store.steampowered.com/app/240" Submitter="kauan" />
+	<Ad Image="VorapisV3.png" Url="https://vorapis.pages.dev/#/" Submitter="kauan" />
+	<Ad Image="TheOrangeBox.png" Url="https://web.archive.org/web/20090802020424/http://store.steampowered.com/sub/469/" Submitter="MartinFLL" />
+	<Ad Image="Blips.png" Url="https://blips.club" Submitter="Evolta" />
+	<Ad Image="Steam.png" Url="http://web.archive.org/web/20121019125044/http://store.steampowered.com/" Submitter="Evolta" />
+	<Ad Image="Lycos.jpeg" Url="https://web.archive.org/web/20050716085844/http://www.lycos.com/" Submitter="newazni16" />
+	<!-- Removed: Invalid formation, and at the request of the author.
+	<Ad Image="name.gif" Url="https://google.com" />
+	-->
+	<Ad Image="Bytemind.gif" Url="https://bytemindcomic.org/" Submitter="DaniJam" />
+	<Ad Image="FreeGamesatROBLOXcom.png" Url="http://web.archive.org/web/20110630075555/http://www.roblox.com/default.aspx" Submitter="jane" />
+	<Ad Image="janevortex.gif" Url="https://janevortex.neocities.org/" Submitter="jane" />
+	<Ad Image="ModTheSims.png" Url="https://modthesims.info/" Submitter="StuxDeck" />
+	<Ad Image="MSNMusic.png" Url="https://www.chrisrlillo.com" Submitter="ChrisRLillo" />
+	<Ad Image="hjonk.png" Url="https://hjonk.me" Submitter="λ SwiftEvolta" />
+	<Ad Image="WearefuckingunderattackPLAYNOW.png" Url="https://web.archive.org/web/20240925131850/https://github.com/WinampDesktop/winamp/pull/71" Submitter="chuuisinsane (chris)" />
+	<Ad Image="LinkinParkXJay-ZCollab.png" Url="https://web.archive.org/web/20050618000145/http://www.linkinpark.com/index.php" Submitter="Frank Blaskovich" />
+	<Ad Image="roblox.jpeg" Url="https://web.archive.org/web/20170227121323/https://www.roblox.com/" Submitter="Auger" />
+	<Ad Image="StarTube.png" Url="https://github.com/lightbeam24/StarTube?tab=readme-ov-file" Submitter="λ SwiftEvolta" />
+	<Ad Image="youtube.jpeg" Url="https://web.archive.org/web/20051231232401/http://www.youtube.com/" Submitter="Auger" />
+	<Ad Image="VergilsBanish.png" Url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" Submitter="Laserman" />
+	<Ad Image="Homestuck.gif" Url="http://www.mspaintadventures.com/newindex.php" Submitter="jane" />
+	<Ad Image="jvtexad.png" Url="https://jvtex.neocities.org/homepage" Submitter="jane" Frames="53" FrameDelay="220" />
+	<Ad Image="CodenamesUnlimitedElectronicMusic.png" Url="https://www.deathmothtribe.com/artists/codename/release" Submitter="codename" />
+	<Ad Image="Soundcloud2011.png" Url="https://web.archive.org/web/20110629023725if_/http://soundcloud.com/" Submitter="codename" />
+	<Ad Image="duckydeecuriousidees.png" Url="https://duckydee.neocities.org" Submitter="dee starlight" />
+	<Ad Image="MoriHime-VirtualRockBand.png" Url="https://morihime.com" Submitter="ojoumori" />
+	<Ad Image="MLG2460spersonalsite.gif" Url="https://mlg.2000.hu/" Submitter="MLG2460" />
+	<Ad Image="furplesawesomead.gif" Url="https://furple.art/" Submitter="💜 ⋆ 🐾 ⭐ 𝖋𝖚𝖗𝖕𝖑𝖊 ⭐🐾⋆ 💜•" />
+	<Ad Image="WWTHD.gif" Url="https://web.archive.org/web/20111120071842/http://www.tallyhall.com/" Submitter="💜 ⋆ 🐾 ⭐ 𝖋𝖚𝖗𝖕𝖑𝖊 ⭐🐾⋆ 💜•" />
+	<Ad Image="KWSXRADIO.gif" Url="https://radio.kwsx.online" Submitter="KWSX" />
+	<Ad Image="NeedForSpeedProStreetPre-Order.gif" Url="https://web.archive.org/web/20071024130223/http://eastore.ea.com/servlet/ControllerServlet?Action=DisplayPage&amp;Env=BASE&amp;Locale=en_US&amp;SiteID=ea&amp;id=ProductDetailsPage&amp;productID=81569900" Submitter="boltyara303" />
+	<Ad Image="noctanium.png" Url="https://www.twitch.tv/noctanium_" Submitter="chinchon king" />
+	<Ad Image="Dankpods.png" Url="https://www.youtube.com/channel/UC7Jwj9fkrf1adN4fMmTkpug" Submitter="SmashHug" />
+	<Ad Image="Spotify-Aworldofmusic.png" Url="https://web.archive.org/web/20100105141457/http://www.spotify.com/en/" Submitter="patricktbp" />
+	<Ad Image="Dailysuikacom.png" Url="https://dailysuika.com/" Submitter="meudeth" />
+	<Ad Image="FVideos11.png" Url="http://www.youtube.com/user/FVideos11" Submitter="Reprety" />
+	<Ad Image="modarchive.png" Url="https://modarchive.org/index.php" Submitter="SmashHug" />
+	<Ad Image="firefox.png" Url="https://web.archive.org/web/20100429052757/http://www.mozilla.com/en-US/firefox/firefox.html" Submitter="patricktbp" />
+	
+	<Ad Image="Teasawesomestrawpage.png" Url="https://teasawesome.straw.page/" Submitter="TeaPlayz" />
+	<Ad Image="UnderscoreAngelsWebsite.png" Url="https://underscoreangel.neocities.org/" Submitter="UnderscoreAngel" />
+	<Ad Image="mywebsite.png" Url="https://blockblitz.dev" Submitter="blockblitz" />
+	<Ad Image="NoBigDeal.png" Url="https://www.roblox.com/games/18112334178/No-Big-Deal" Submitter="ash" />
+	<Ad Image="Half-Life2ComingSoon.png" Url="https://www.half-life.com/en/halflife2" Submitter="Tom (Jamey/Timothy/BloBlo)" />
+	<Ad Image="Mint.png" Url="https://web.archive.org/web/20100615065428/https://www.linuxmint.com/" Submitter="Jamie: Empress of Bollix I" />
+	<Ad Image="Geode.gif" Url="https://geode-sdk.org/" Submitter="alk &lt;3" />
+	<Ad Image="Debian-Theuniversaloperatingsystem.png" Url="https://web.archive.org/web/20090217001811/https://www.debian.org/" Submitter="Jamie: Empress of Bollix I" />
+	<Ad Image="ArchLinux-asimplelightweightlinuxdistribution.png" Url="https://web.archive.org/web/20070615002306/https://archlinux.org/" Submitter="Jamie: Empress of Bollix I" />
+	<Ad Image="RidgeTV.png" Url="https://discord.gg/VeHDcjMBkq" Submitter="Awesomearc" />
+	<Ad Image="Geckium.png" Url="https://github.com/angelbruni/Geckium" Submitter="SmashHug" />
+	<Ad Image="visitnhrevise.gif" Url="https://web.archive.org/web/20090514084221/http://www.visitnh.gov/" Submitter="(ballin&amp;cantgetup) cat" />
+	<Ad Image="2006Album.png" Url="https://frutigeraeroarchive.org/music#2006" Submitter="Lily (ZesCew2)" />
+	<Ad Image="GoogleChrome-Getafastfreewebbrowser.png" Url="https://web.archive.org/web/20091122052147/https://www.google.com/chrome/" Submitter="patricktbp" />
+	<Ad Image="comboklombo2.png" Url="https://callialcium.itch.io/combo-klombo-2" Submitter="calcium" />
+	<!-- Vetoed by Isabella: Does not follow rules. -->
+	<!-- <Ad Image="AVASTRAWPAGE.gif" Url="https://avagaming.straw.page" Submitter="ZeldaAva!" /> -->
+	<Ad Image="wizard-gang.png" Url="https://hypaportal.neocities.org/wizard" Submitter="hypa" />
+	<Ad Image="iPhone3GS-MoretoloveLesstopay.png" Url="https://web.archive.org/web/20090624014217/http://www.apple.com/" Submitter="patricktbp" />
+	<Ad Image="BurnoutRevenge.gif" Url="https://web.archive.org/web/20051231051736/http://www.burnoutrevenge.ea.com/" Submitter="GeneralOnyx" />
+	<Ad Image="MozillaThunderbird-Organizesecureandcustomizeyouremail.png" Url="https://web.archive.org/web/20091002001653/http://www.mozillamessaging.com/en-US" Submitter="patricktbp" />
+	<Ad Image="iTunes-Theworlds1musicstore.png" Url="https://web.archive.org/web/20091019050926/http://www.apple.com/itunes/overview" Submitter="patricktbp" />
+	<Ad Image="iPhone5C-Forthecolorful.png" Url="https://web.archive.org/web/20130924172929/http://www.apple.com/" Submitter="patricktbp" />
+	<Ad Image="Windows8-Openawiderworld.png" Url="https://web.archive.org/web/20121027064317/http://windows.microsoft.com/en-US/windows/home" Submitter="patricktbp" />
+	<Ad Image="WelcometoBitviewBlaynchannel.gif" Url="https://www.bitview.net/user/Blayn" Submitter="RobotixFox" />
+	<Ad Image="windowsxd.png" Url="https://gandalfsax.com/" Submitter="xdek" />
+	<Ad Image="penguincomputing.png" Url="https://pod.penguincomputing.com/" Submitter="mohamed" />
+	<Ad Image="MSPAINTADVENTURES.gif" Url="https://homestuck.giovanh.com/unofficial-homestuck-collection/" Submitter="Lumacy" />
+	<Ad Image="SPAMTONSWEEPSTAKES.gif" Url="https://deltarune.com/sweepstakes/" Submitter="Lumacy" />
+	<Ad Image="SouthParkBiggerLongerUncut.png" Url="https://web.archive.org/web/20000622000811/http://www.southparkmovie.com/" Submitter="ringo" />
+	<Ad Image="ProjectLuna.png" Url="https://project-luna.lol" Submitter="patricktbp" />
+	<Ad Image="Legacy4J.png" Url="https://modrinth.com/mod/legacy4j" Submitter="NicSonic-_-" />
+	<Ad Image="Re-Console.png" Url="https://modrinth.com/modpack/legacy-minecraft" Submitter="NicSonic-_-" />
+	<Ad Image="cyanogenmod.png" Url="https://web.archive.org/web/20140122073954/http://www.cyanogenmod.org/" Submitter="Xbox 360 guy" />
+	<!-- I removed a duplicate with the same metadata, but different image. The export bot did not 
+         actually include the other image, choosing the latest one. - Isabella -->
+	<Ad Image="Persona3.jpeg" Url="https://web.archive.org/web/20060611132518if_/http://p3.atlus.co.jp/" Submitter="DismissedAxe" />
+</Ads>

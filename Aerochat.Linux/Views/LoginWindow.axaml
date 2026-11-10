@@ -1,0 +1,94 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Aerochat.Linux.Controls"
+        x:Class="Aerochat.Linux.Views.LoginWindow"
+        Title="Aerochat"
+        Icon="avares://Aerochat/Assets/Resources/Icons/MainWnd.png"
+        Width="420" Height="650"
+        CanResize="False"
+        SystemDecorations="None"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4FAFF">
+
+  <Border BorderBrush="{Binding Scene.WindowBorderBrush}" BorderThickness="1" CornerRadius="6" ClipToBounds="True">
+    <Grid RowDefinitions="28,*">
+
+      <Border Grid.Row="0" Background="{Binding Scene.SceneBrush}"
+              BorderBrush="#80FFFFFF" BorderThickness="0,0,0,1"
+              PointerPressed="Titlebar_PointerPressed">
+        <Grid ColumnDefinitions="Auto,*,Auto">
+          <Image Width="16" Height="16" Margin="8,0,0,0"
+                 VerticalAlignment="Center"
+                 Source="avares://Aerochat/Assets/Resources/Icons/MainWnd.png" />
+          <TextBlock Grid.Column="1" Margin="6,0,0,0" VerticalAlignment="Center"
+                     Text="Windows Live Messenger" FontWeight="SemiBold"
+                     Foreground="{Binding Scene.TitlebarTextBrush}" />
+          <Button Grid.Column="2" Classes="caption close" Click="Close_Click"><Image /></Button>
+        </Grid>
+      </Border>
+
+      <Grid Grid.Row="1">
+        <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Message/Background.png"
+                            Slice="1,1"
+                            Tint="{Binding Scene.Color}" />
+
+        <Grid RowDefinitions="128,*">
+          <!-- Scene banner, faded into the sign-in area. -->
+          <Panel Grid.Row="0">
+            <Image Source="{Binding Scene.Image}" Stretch="UniformToFill" />
+            <Rectangle>
+              <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
+                  <GradientStop Offset="0" Color="#00FFFFFF" />
+                  <GradientStop Offset="0.6" Color="#80FFFFFF" />
+                  <GradientStop Offset="1" Color="#FFFFFFFF" />
+                </LinearGradientBrush>
+              </Rectangle.Fill>
+            </Rectangle>
+          </Panel>
+
+          <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                        HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="24,0,24,14" HorizontalAlignment="Center">
+              <controls:ProfilePictureFrame FrameSize="ExtraLarge" Status="Offline"
+                                            HorizontalAlignment="Center" Margin="0,-14,0,0" />
+
+              <TextBlock Text="Sign in" FontSize="19" Foreground="#355A88"
+                         HorizontalAlignment="Center" Margin="0,2,0,0" />
+              <TextBlock Text="Sign in with your Discord account."
+                         Foreground="#333333" HorizontalAlignment="Center" Margin="0,4,0,0"
+                         TextWrapping="Wrap" TextAlignment="Center" />
+
+              <Panel MaxWidth="272" Margin="0,12,0,0">
+                <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Login/Frame.png"
+                                    Slice="4,4" />
+                <StackPanel Margin="8,8,8,10">
+                  <TextBlock Text="Discord token" FontWeight="SemiBold" Margin="1,0,0,3" />
+                  <TextBox x:Name="TokenBox" PasswordChar="●"
+                           Watermark="Paste your Discord user token here" />
+
+                  <TextBlock Text="Status" FontWeight="SemiBold" Margin="1,9,0,3" />
+                  <ComboBox x:Name="StatusBox" HorizontalAlignment="Stretch" />
+
+                  <CheckBox x:Name="RememberBox" Content="Remember me on this computer"
+                            IsChecked="True" Margin="0,7,0,0" />
+
+                  <TextBlock x:Name="ErrorText" Foreground="#B02A37" TextWrapping="Wrap"
+                             IsVisible="False" Margin="0,4,0,0" FontSize="11" />
+
+                  <Button x:Name="SignInButton" Classes="wlm" Content="Sign in"
+                          HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                          Margin="0,9,0,0" Click="SignIn_Click" />
+                </StackPanel>
+              </Panel>
+
+              <TextBlock Text="Using a custom Discord client violates Discord's Terms of Service. Use a secondary account."
+                         Classes="muted" TextWrapping="Wrap" FontSize="10"
+                         TextAlignment="Center" Margin="0,10,0,0" />
+            </StackPanel>
+          </ScrollViewer>
+        </Grid>
+      </Grid>
+    </Grid>
+  </Border>
+</Window>

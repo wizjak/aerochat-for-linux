@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Aerochat.Linux.Controls"
+        x:Class="Aerochat.Linux.Views.NotificationWindow"
+        Title="Windows Live Messenger"
+        Width="304" Height="124"
+        CanResize="False"
+        SystemDecorations="None"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        Topmost="True"
+        WindowStartupLocation="Manual"
+        Background="#F4FAFF">
+
+  <Grid>
+    <controls:NineSlice Source="avares://Aerochat/Assets/Resources/Notification/Background.png"
+                        Slice="16,16"
+                        IsHitTestVisible="False" />
+
+    <Grid Margin="10,7,8,8" RowDefinitions="20,*">
+      <Grid ColumnDefinitions="Auto,*,Auto">
+        <Image Width="16" Height="16"
+               VerticalAlignment="Center"
+               Source="avares://Aerochat/Assets/Resources/Notification/Logo.png" />
+        <TextBlock Grid.Column="1" Margin="6,0,0,0"
+                   VerticalAlignment="Center"
+                   Text="Windows Live Messenger"
+                   FontSize="11" Foreground="#3A3A3A"
+                   TextTrimming="CharacterEllipsis" />
+        <Button Grid.Column="2" Classes="toastClose" Content="×"
+                Width="16" Height="16" Padding="0"
+                Click="Close_Click"
+                ToolTip.Tip="Close notification" />
+      </Grid>
+
+      <Grid Grid.Row="1" ColumnDefinitions="Auto,*" Margin="4,3,4,0"
+            Cursor="Hand"
+            Background="Transparent"
+            PointerPressed="Body_PointerPressed">
+        <Viewbox Width="38" Height="38" VerticalAlignment="Center">
+          <controls:ProfilePictureFrame FrameSize="Small"
+                                        Avatar="{Binding Avatar}"
+                                        Status="{Binding Status}" />
+        </Viewbox>
+
+        <StackPanel Grid.Column="1" Margin="8,0,0,0" VerticalAlignment="Center" Spacing="1">
+          <TextBlock Text="{Binding AuthorName}" FontSize="12" FontWeight="SemiBold"
+                     Foreground="#1F5C87" TextTrimming="CharacterEllipsis" />
+          <TextBlock Text="{Binding ContextText}" FontSize="10"
+                     Foreground="#5A6A75" TextTrimming="CharacterEllipsis" />
+          <TextBlock Text="{Binding PreviewText}" FontSize="11"
+                     Foreground="#2A2A2A" TextWrapping="Wrap" MaxHeight="34"
+                     TextTrimming="CharacterEllipsis"
+                     IsVisible="{Binding !IsSignOn}" />
+        </StackPanel>
+      </Grid>
+    </Grid>
+  </Grid>
+</Window>

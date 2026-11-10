@@ -1,0 +1,405 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Aerochat.Linux.Controls">
+
+  <Styles.Resources>
+    <SolidColorBrush x:Key="WlmBlue" Color="#2E8FD8" />
+    <SolidColorBrush x:Key="WlmBlueDark" Color="#1565A8" />
+    <SolidColorBrush x:Key="WlmBlueLight" Color="#EAF6FF" />
+    <SolidColorBrush x:Key="WlmBorder" Color="#8DB9D6" />
+    <SolidColorBrush x:Key="WlmText" Color="#203040" />
+    <SolidColorBrush x:Key="WlmMuted" Color="#6B7C8A" />
+    <SolidColorBrush x:Key="WlmHover" Color="#DDEEFB" />
+    <SolidColorBrush x:Key="WlmSelected" Color="#C5E4F8" />
+
+    <LinearGradientBrush x:Key="TitlebarBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+      <GradientStop Offset="0" Color="#FDFEFF" />
+      <GradientStop Offset="0.45" Color="#D9EDFB" />
+      <GradientStop Offset="1" Color="#B9DDF4" />
+    </LinearGradientBrush>
+
+    <ControlTemplate x:Key="WlmButtonTemplate" TargetType="Button">
+      <Panel>
+        <controls:NineSlice Name="PART_Bg"
+                            Source="avares://Aerochat/Assets/Resources/Button/Normal.png"
+                            Slice="3,3" />
+        <ContentPresenter Margin="{TemplateBinding Padding}"
+                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                          Content="{TemplateBinding Content}"
+                          ContentTemplate="{TemplateBinding ContentTemplate}" />
+      </Panel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WlmToolbarButtonTemplate" TargetType="Button">
+      <Panel>
+        <controls:NineSlice Name="PART_Bg"
+                            Slice="6,6"
+                            Tint="{Binding Scene.Color}"
+                            HoverSource="avares://Aerochat/Assets/Resources/Message/ToolbarHover.png" />
+        <ContentPresenter Margin="{TemplateBinding Padding}"
+                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                          Content="{TemplateBinding Content}"
+                          ContentTemplate="{TemplateBinding ContentTemplate}" />
+      </Panel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="CaptionButtonTemplate" TargetType="Button">
+      <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Content="{TemplateBinding Content}" />
+    </ControlTemplate>
+
+    <!-- Windows Live Messenger scrollbars, built from the original 17x17 assets. -->
+    <ControlTemplate x:Key="WlmScrollThumb" TargetType="Thumb">
+      <Panel>
+        <controls:NineSlice Source="avares://Aerochat/Assets/Resources/ScrollBar/Inactive.png"
+                            HoverSource="avares://Aerochat/Assets/Resources/ScrollBar/Hover.png"
+                            Slice="3,3" />
+        <Image Source="avares://Aerochat/Assets/Resources/ScrollBar/VertThumbGripperInactive.png"
+               HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None" />
+      </Panel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WlmScrollUpButton" TargetType="RepeatButton">
+      <Panel Background="Transparent">
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None" />
+      </Panel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WlmScrollDownButton" TargetType="RepeatButton">
+      <Panel Background="Transparent">
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None" />
+      </Panel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WlmScrollPageButton" TargetType="RepeatButton">
+      <Border Background="Transparent" />
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WlmVerticalScrollBarTemplate" TargetType="ScrollBar">
+      <Grid RowDefinitions="17,*,17">
+        <Image Grid.RowSpan="3" Stretch="Fill"
+               Source="avares://Aerochat/Assets/Resources/ScrollBar/VertScrollBarBg.png" />
+
+        <RepeatButton Name="PART_LineUpButton" Grid.Row="0"
+                      Focusable="False" Classes="scrollUp"
+                      Template="{StaticResource WlmScrollUpButton}" />
+
+        <Track Grid.Row="1"
+               Minimum="{TemplateBinding Minimum}"
+               Maximum="{TemplateBinding Maximum}"
+               Value="{TemplateBinding Value, Mode=TwoWay}"
+               ViewportSize="{TemplateBinding ViewportSize}"
+               Orientation="Vertical"
+               IsDirectionReversed="True">
+          <Track.DecreaseButton>
+            <RepeatButton Name="PART_PageUpButton" Focusable="False"
+                          Template="{StaticResource WlmScrollPageButton}" />
+          </Track.DecreaseButton>
+          <Track.IncreaseButton>
+            <RepeatButton Name="PART_PageDownButton" Focusable="False"
+                          Template="{StaticResource WlmScrollPageButton}" />
+          </Track.IncreaseButton>
+          <Thumb MinHeight="17" Template="{StaticResource WlmScrollThumb}" />
+        </Track>
+
+        <RepeatButton Name="PART_LineDownButton" Grid.Row="2"
+                      Focusable="False" Classes="scrollDown"
+                      Template="{StaticResource WlmScrollDownButton}" />
+      </Grid>
+    </ControlTemplate>
+  </Styles.Resources>
+
+  <Style Selector="Window">
+    <Setter Property="FontFamily" Value="Segoe UI, Selawik, Adwaita Sans, Noto Sans, Inter, DejaVu Sans, Liberation Sans" />
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="Foreground" Value="{StaticResource WlmText}" />
+    <Setter Property="Background" Value="#F4FAFF" />
+  </Style>
+
+  <Style Selector="TextBlock">
+    <Setter Property="Foreground" Value="{StaticResource WlmText}" />
+  </Style>
+
+  <Style Selector="TextBlock.muted">
+    <Setter Property="Foreground" Value="{StaticResource WlmMuted}" />
+  </Style>
+
+  <Style Selector="TextBlock.title">
+    <Setter Property="FontSize" Value="13" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="Foreground" Value="{StaticResource WlmBlueDark}" />
+  </Style>
+
+  <!-- Windows Live Messenger / Aero buttons -->
+  <Style Selector="Button.wlm">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="9,1" />
+    <Setter Property="MinWidth" Value="58" />
+    <Setter Property="MinHeight" Value="23" />
+    <Setter Property="Foreground" Value="#333333" />
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Template" Value="{StaticResource WlmButtonTemplate}" />
+  </Style>
+
+  <Style Selector="Button.wlm:focus /template/ controls|NineSlice#PART_Bg">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Button/Focused.png" />
+  </Style>
+
+  <Style Selector="Button.wlm:pointerover /template/ controls|NineSlice#PART_Bg">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Button/Hover.png" />
+  </Style>
+
+  <Style Selector="Button.wlm:pressed /template/ controls|NineSlice#PART_Bg">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Button/Pressed.png" />
+  </Style>
+
+  <Style Selector="Button.wlm:disabled /template/ controls|NineSlice#PART_Bg">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Button/Disabled.png" />
+  </Style>
+
+  <Style Selector="Button.wlm:disabled">
+    <Setter Property="Foreground" Value="#ADADAD" />
+  </Style>
+
+  <!-- Flat toolbar buttons (footer, chat toolbar). Transparent until hovered. -->
+  <Style Selector="Button.toolbar">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="8,2" />
+    <Setter Property="MinHeight" Value="22" />
+    <Setter Property="Foreground" Value="#333333" />
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Template" Value="{StaticResource WlmToolbarButtonTemplate}" />
+  </Style>
+
+  <Style Selector="Button.toolbar:pressed /template/ controls|NineSlice#PART_Bg">
+    <Setter Property="HoverSource" Value="avares://Aerochat/Assets/Resources/Message/ToolbarActive.png" />
+  </Style>
+
+  <!-- Small circular "remove attachment" button and toast close button. -->
+  <Style Selector="Button.attachRemove">
+    <Setter Property="Background" Value="#D9534F" />
+    <Setter Property="Foreground" Value="White" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="CornerRadius" Value="8" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="FontSize" Value="11" />
+    <Setter Property="FontWeight" Value="Bold" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="MinWidth" Value="0" />
+    <Setter Property="MinHeight" Value="0" />
+  </Style>
+
+  <Style Selector="Button.attachRemove:pointerover">
+    <Setter Property="Background" Value="#B52B27" />
+  </Style>
+
+  <Style Selector="Button.toastClose">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="Foreground" Value="#687A86" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="CornerRadius" Value="2" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="FontSize" Value="13" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="MinWidth" Value="0" />
+    <Setter Property="MinHeight" Value="0" />
+  </Style>
+
+  <Style Selector="Button.toastClose:pointerover">
+    <Setter Property="Background" Value="#E7A0A0" />
+    <Setter Property="Foreground" Value="#FFFFFF" />
+  </Style>
+
+  <!-- Vista caption buttons -->
+  <Style Selector="Button.caption">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Template" Value="{StaticResource CaptionButtonTemplate}" />
+  </Style>
+
+  <Style Selector="Button.caption Image">
+    <Setter Property="Stretch" Value="None" />
+  </Style>
+
+  <Style Selector="Button.caption.min,
+                   Button.caption.max">
+    <Setter Property="Height" Value="18" />
+    <Setter Property="Margin" Value="0,5,0,0" />
+  </Style>
+
+  <Style Selector="Button.caption.min">
+    <Setter Property="Width" Value="27" />
+  </Style>
+
+  <Style Selector="Button.caption.max">
+    <Setter Property="Width" Value="25" />
+  </Style>
+
+  <Style Selector="Button.caption.close">
+    <Setter Property="Width" Value="43" />
+    <Setter Property="Height" Value="18" />
+    <Setter Property="Margin" Value="0,5,8,0" />
+  </Style>
+
+  <Style Selector="Button.caption.min Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/Minimize.png" />
+  </Style>
+  <Style Selector="Button.caption.min:pointerover Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/MinimizeHover.png" />
+  </Style>
+  <Style Selector="Button.caption.min:pressed Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/MinimizeActive.png" />
+  </Style>
+
+  <Style Selector="Button.caption.max Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/Maximize.png" />
+  </Style>
+  <Style Selector="Button.caption.max:pointerover Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/MaximizeHover.png" />
+  </Style>
+  <Style Selector="Button.caption.max:pressed Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/MaximizeActive.png" />
+  </Style>
+
+  <Style Selector="Button.caption.close Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/Close.png" />
+  </Style>
+  <Style Selector="Button.caption.close:pointerover Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/CloseHover.png" />
+  </Style>
+  <Style Selector="Button.caption.close:pressed Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/Titlebar/Vista/CloseActive.png" />
+  </Style>
+
+  <!-- Text boxes -->
+  <Style Selector="TextBox">
+    <Setter Property="Background" Value="White" />
+    <Setter Property="BorderBrush" Value="{StaticResource WlmBorder}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="2" />
+    <Setter Property="Padding" Value="4,2" />
+    <Setter Property="MinHeight" Value="23" />
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="Foreground" Value="#222222" />
+    <Setter Property="CaretBrush" Value="#222222" />
+  </Style>
+
+  <Style Selector="TextBox:focus">
+    <Setter Property="BorderBrush" Value="{StaticResource WlmBlue}" />
+  </Style>
+
+  <Style Selector="TextBox.search">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="22,2,6,2" />
+    <Setter Property="MinHeight" Value="0" />
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+  </Style>
+
+  <Style Selector="TextBox.search:focus">
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+  </Style>
+
+  <Style Selector="TextBox.chatInput">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="7,5" />
+    <Setter Property="MinHeight" Value="0" />
+    <Setter Property="FontSize" Value="13" />
+  </Style>
+
+  <Style Selector="TextBox.chatInput:focus">
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+  </Style>
+
+  <Style Selector="ComboBox">
+    <Setter Property="Background" Value="White" />
+    <Setter Property="BorderBrush" Value="{StaticResource WlmBorder}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="2" />
+    <Setter Property="MinHeight" Value="23" />
+    <Setter Property="Padding" Value="5,1" />
+    <Setter Property="FontSize" Value="12" />
+  </Style>
+
+  <Style Selector="CheckBox">
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="MinHeight" Value="20" />
+  </Style>
+
+  <Style Selector="TreeView">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+
+  <Style Selector="TreeViewItem">
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="MinHeight" Value="22" />
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="IsExpanded" Value="True" />
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+
+  <!-- The WLM row images are drawn by the item template; hide the Fluent selection boxes. -->
+  <Style Selector="TreeViewItem:pointerover /template/ Border#PART_LayoutRoot">
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+
+  <Style Selector="TreeViewItem:selected /template/ Border#PART_LayoutRoot">
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+
+  <Style Selector="ListBoxItem">
+    <Setter Property="Padding" Value="4,3" />
+  </Style>
+
+  <Style Selector="ScrollBar">
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+
+  <Style Selector="ScrollBar:vertical">
+    <Setter Property="Width" Value="17" />
+    <Setter Property="MinWidth" Value="17" />
+    <Setter Property="Template" Value="{StaticResource WlmVerticalScrollBarTemplate}" />
+  </Style>
+
+  <Style Selector="RepeatButton.scrollUp /template/ Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/ScrollBar/UpGlyphInactive.png" />
+  </Style>
+  <Style Selector="RepeatButton.scrollUp:pointerover /template/ Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/ScrollBar/UpGlyphHover.png" />
+  </Style>
+  <Style Selector="RepeatButton.scrollUp:pressed /template/ Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/ScrollBar/UpGlyphActive.png" />
+  </Style>
+
+  <Style Selector="RepeatButton.scrollDown /template/ Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/ScrollBar/DownGlyphInactive.png" />
+  </Style>
+  <Style Selector="RepeatButton.scrollDown:pointerover /template/ Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/ScrollBar/DownGlyphHover.png" />
+  </Style>
+  <Style Selector="RepeatButton.scrollDown:pressed /template/ Image">
+    <Setter Property="Source" Value="avares://Aerochat/Assets/Resources/ScrollBar/DownGlyphActive.png" />
+  </Style>
+</Styles>
